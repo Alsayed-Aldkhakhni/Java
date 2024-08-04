@@ -5,9 +5,9 @@
  *
  * Date: March 11, 2024
  *
- * Author: Alsayed Aldkhakhni
+ * Author: Alsayed-Aldkhakhni
  *
- * Last modification: April 2nd, 2024
+ * Last modification: August 4, 2024 --> [11:20 AM]
  */
 
 // import declaration.
