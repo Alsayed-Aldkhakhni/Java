@@ -1,0 +1,17 @@
+A program to mileage the automobiles get.
+
+Initialize miles    to 0
+Initialize gallons  to 0
+Initialize tMiles   to 0
+Initialize tGallons to 0
+
+while miles is not -1
+     prompt the user for miles.
+     prompt the user for gallons.
+     mileage them and print the result.
+     add miles to tMiles.
+     add gallons to tGallons.
+
+Mileage the tMiles and tGallons and print the result.
+
+
