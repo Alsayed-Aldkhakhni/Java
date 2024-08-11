@@ -1,11 +1,15 @@
 /*
- * Subject: A program tha takes 10 integers and print the largest 2 numbers.
+ * File name: Largest2Nums.java
  *
- * Date: March 19th, 2024
+ * Subject: Find the largest 2 numbers.
  *
- * Author: Alsayed Ali
+ * Date: March 19, 2024
  *
- */
+ * Author: Alsayed Ali Aldkhakhni
+ *
+ * Last modification: August 11, 2024 at [02:17 PM]
+ *
+ * */
 
 import java.util.Scanner; // import declaration.
 public class Largest2Nums // class  declaration.
