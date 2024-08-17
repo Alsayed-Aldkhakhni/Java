@@ -46,6 +46,8 @@ public class Diamond2     // class  declaration.
 				System.out.println();
 			}
 
+			// the lower triangle of
+			// the diamond's number of lines.
 			int copy = mid;
 			
 			// print the lower half of the diamond.
