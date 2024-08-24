@@ -24,8 +24,8 @@ class Circule            // class declaration.
 		System.out.printf("The area: %,.3f%n", calcArea(r));
 	}
 
-
 	public static double calcArea(double radius) { return Math.PI * radius * radius; }
 }
+
 
 
