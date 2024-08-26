@@ -17,18 +17,23 @@ public class NumbersTable // class  declaration.
 	public static void main(String[] args)
 	{
 		Scanner input = new Scanner(System.in);
+
+		// how many numbers to convert.
 		System.out.print("Up to x, Enter x: ");
 		int x = input.nextInt();
 
+		// print the headers.
 		System.out.printf("%-10s%-15s%-15s%s%n", "Number", "Binary", "Octal", "Hexa");
 		System.out.println("=============================================");
 
+		// invoke the methods.
 		for(int i = 0; i <= x; i++)
 			System.out.printf("%-10d%-15d%-15d%s%n", i, toBinary(i), toOctal(i), toHexa(i));
 
 	
 	}
 
+	// from decimal to binary.
 	public static int toBinary(int x)
 	{
 		if(x == 0)
@@ -49,6 +54,7 @@ public class NumbersTable // class  declaration.
 		return binary;
 	}
 
+	// from decimal to octal.
 	public static int toOctal(int x)
 	{
 		if(x == 0)
@@ -67,6 +73,7 @@ public class NumbersTable // class  declaration.
 		return rslt;
 	}
 
+	// from decimal to hexa.
 	public static String toHexa(int x)
 	{
 		if(x == 0)
@@ -93,6 +100,7 @@ public class NumbersTable // class  declaration.
 
 			String rstr = "";
 
+			// reverse the order.
 			for(int i = str.length() - 1; i >= 0; i--)
 				rstr += str.charAt(i);
 
