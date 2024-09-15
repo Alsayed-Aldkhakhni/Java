@@ -39,7 +39,6 @@ public class DateTest // class declaration.
 		}
 		catch (InterruptedException e)     // thrown by Thread class.   
 		{
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
