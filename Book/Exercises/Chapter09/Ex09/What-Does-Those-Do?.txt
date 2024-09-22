@@ -1,0 +1,36 @@
+-----------------------------------------------------------------------------------
+* Subject  : Determine what does each code snippet do. 
+*
+* Date     : September 21, 2024
+*
+* Author   : Alsayed A. Aldkhakhni
+*
+* Last mod : September 21, 2024
+-----------------------------------------------------------------------------------
+
+a) super.earnings(); --> in the subclass' earnings method.
+   
+   doing this in a method which overrides a parent's one is to
+   make the parent's to carry out it's part of work, either
+   constructing them and set the default values or supplied
+   ones, impelementing the reusabiliy concept.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+b) @Override --> before the overriding method in the subclass.
+
+   Flags the compiler that i am overriding a parent's method with this one
+   and to alter me if i made a wrong spelling while writing the signature 
+   of this method which overrides the parent's one.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+c) super(arg1, arg2); --> as a 1st statement in child's constructor.
+ 
+   This statement must be in the constructor of the child class
+   whether implicitly or explicitly to construct the parent's
+   members and set their values with those supplied arguments
+   arg1 and arg2.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
