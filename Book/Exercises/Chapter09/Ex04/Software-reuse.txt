@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------
+* Subject  : A simple discussion of the benifits of using inheritance. 
+*
+* Date     : September 21, 2024
+*
+* Author   : Alsayed A. Aldkhakhni
+*
+* Last mod : September 21, 2024
+-------------------------------------------------------------------------
+
+1. Reusability: Using classes that already written
+                avoids reinventing the wheel and needs less effort.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2. Saving time: Since those classes are already written and ready to use
+                the time was dedicated to write them will be assigned to 
+                another task.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3. Pervent errors: Since Those classes is well written and debuged, so
+                   it pervents any possbility of erros.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
