@@ -1,0 +1,22 @@
+-----------------------------------------------------------------------------------
+* Subject  : Why calling get method in the class' body?
+*
+* Date     : September 21, 2024
+*
+* Author   : Alsayed A. Aldkhakhni
+*
+* Last mod : September 21, 2024
+-----------------------------------------------------------------------------------
+
+* Using get method can avoid us editing and modifing many lines of codes
+  since centralized code in one place as a get function and call that 
+  function from different palces, if at some later point i wanted to
+  modifiy the name of the member which this function returns or even 
+  it's logic. If so, i will just modifing the method's content and any 
+  section of my program which uses that function won't be affected, 
+  but if this is not the approach used we would modify each line of 
+  code which uses the body of that get method.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
