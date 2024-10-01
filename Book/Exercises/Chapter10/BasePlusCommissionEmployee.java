@@ -1,5 +1,5 @@
 /*
- * File name: CommissionEmployee.java 
+ * File name: BasePlusCommissionEmployee.java 
  * 
  * Subject  : Class that emulates employees take commissions.
  * 
