@@ -21,7 +21,7 @@ public class ConstructorFailure
 		}
 		catch(Exception e)
 		{
-			System.out.println(e);
+			System.out.println(e); // invoke e.toString() implicitly.
 		}
 	}
 }

@@ -18,3 +18,5 @@ public class SomeClass
 		throw new Exception("I'm an exception thrown from SomeClass's ctor.");
 	}
 }
+
+
