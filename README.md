@@ -4,7 +4,7 @@
 ## ------------------------------------------------------------------
 ## 
 ## 2. Also it contains some basic data structures as Linked Lists,
-##    Queues, Stacks.
+##    Queues, Stacks [sooner].
 ## ------------------------------------------------------------------
 ## 
 ## 3.
