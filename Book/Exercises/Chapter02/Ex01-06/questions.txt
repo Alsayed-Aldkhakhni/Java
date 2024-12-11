@@ -1,8 +1,8 @@
-//===========================================
- * Subject: Chapter 02 exercises' solutions.
+//================================================================
+ * Subject: Chapter 02 exercises' solutions of questions [01, 06].
  * Date   : December 11, 2024
  * Author : Alsayed A. Khaleel
-//===========================================
+//================================================================
 
 Q2.1:
 a) A(n) [ Opening curly brace '{' ]  begins the body of every method, and a(n) [ Closing curly brace '}' ] ends the body of every method.
