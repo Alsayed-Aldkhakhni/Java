@@ -1,0 +1,94 @@
+//================================================================
+ * Subject: Chapter 03 exercises' solutions of questions [01, 04].
+ * Date   : December 12, 2024
+ * Author : Alsayed A. Khaleel
+//================================================================
+
+Q3.1:
+a) Each class declaration that begins with keyword [public] must be stored in a file that
+    has exactly the same name as the class and ends with the .java filename extension.
+b) Keyword [class]in a class declaration is followed immediately by the class’s name.
+c) Keyword [new] requests memory from the system to store an object, then calls the
+    corresponding class’s constructor to initialize the object.
+d) Each parameter must specify both a(n) [data type] and a(n) [parameter name].
+e) By default, classes that are compiled in the same directory are considered to be in the
+    same package, known as the [default package].
+f) Java provides two primitive types for storing floating-point numbers in memory: [float, double]
+g) Variables of type double represent [double] floating-point numbers.
+h) Scanner method [nextDouble] returns a double value.
+i) Keyword public is an access [modifier].
+j) Return type [void] indicates that a method will not return a value.
+k) Scanner method [nextLine] reads characters until it encounters a newline character,
+    then returns those characters as a String.
+l) Class String is in package [java.lang].
+m) A(n) [import declaration] is not required if you always refer to a class with its fully 
+    qualified class name.
+n) A(n) [floating-point number] is a number with a decimal point, such as 7.33, 0.0975 or 1000.12345.
+o) Variables of type float represent [single-precision] floating-point numbers.
+p) The format specifier [%f] is used to output values of type float or double.
+q) Types in Java are divided into two categories [primitives and referenced]
+
+                        *********************************************************************************************** 
+
+Q3.2:                       
+a) By convention, method names begin with an uppercase first letter, and all subsequent
+    words in the name begin with a capital first letter.
+   * False, the best practice is to make the 1st char in the method name to be lower
+      and each of the first one in the subsequent words to be upper.
+b) An import declaration is not required when one class in a package uses another in the same package.
+   * True, such a package is called default package.
+c) Empty parentheses following a method name in a method declaration indicate that the method does not 
+    require any parameters to perform its task.
+   * True
+d) A primitive-type variable can be used to invoke a method.
+   * False, the referenced variables can.
+e) Variables declared in the body of a particular method are known as instance variables
+    and can be used in all methods of the class.
+   * False, Those are variables declared in the class outside any method.
+f) Every method’s body is delimited by left and right braces ({ and }).
+   * True.
+g) Primitive-type local variables are initialized by default.
+   * False, You have to do it yourself.
+h) Reference-type instance variables are initialized by default to the value null.
+   * True.
+i) Any class that contains public static void main(String[] args) can be used to execute an app.
+   * True.
+j) The number of arguments in the method call must match the number of parameters in
+    the method declaration’s parameter list.
+   * True 
+k) Floating-point values that appear in source code are known as floating-point literals and
+    are type float by default. 
+   * False, Type double by default.
+
+                        *********************************************************************************************** 
+
+Q3.3: What is the difference between a local variable and an instance variable?
+
+* local variable:
+  - It is declared inside a method body.
+  - Has no default value.
+  - Its value is lost after the method does its task.
+  - You can't use it before being initialized.
+  - Can only be visible inside the method it's declared in.
+
+* instance variable: 
+  - It is declared inside a class body outside any method.
+  - Has a default value based on its type [primitive or referenced].
+  - Its value remains as long as the object exist.
+  - You can use it before being initialized since it is initialized implicitly.
+  - Its visibality is based on its access modifier
+    - if it is private, it will be visible inside the whole class..
+    - if it is public,  it will be visible any-where.
+
+                        *********************************************************************************************** 
+
+Q3.4: Explain the purpose of a method parameter. What is the difference between a parameter and an argument?
+
+* purpose of parameter:
+  - Used to provide the method with piece of data needed to accomplishes its task.
+  
+* parameter vs argument:
+  - Parameter is the variable we said at the build of the class that method will take,
+  - Argument  is the variable or the literal value passed at the runtime in the driver class.
+
+                        *********************************************************************************************** 
