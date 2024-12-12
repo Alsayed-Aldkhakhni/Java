@@ -1,21 +1,21 @@
 /*
- * File name: HealthProfile.java
+ * File name : HealthProfile.java
  *
- * Subject: Patients health profiles to record their information.
+ * Subject   : Patients health profiles to record their information.
  *
- * Date: August 10, 2024
+ * Date      : August 10, 2024
  *
- * Author: Alsayed Aldkhakhni
+ * Author    : Alsayed A. Khaleel 
  * 
- * Last modification: August 7, 2024 --> [10:46 AM]
+ * Last mod  : December 12, 2024
  *
  * */
 
 public class HealthProfile // class declaration.
 {
 	// instance varibales.
-	private String fName;
-	private String lName;
+	private String firstName;
+	private String lastName;
 	private String gender;
 	private double heightInInches;
 	private double weightInPounds;
@@ -24,10 +24,11 @@ public class HealthProfile // class declaration.
 	private int year;
 
 	// constructor.
-	public HealthProfile(String fName, String lName, int month, int day, int year, double weight, double height, String gender)
+	public HealthProfile(String firstName, String lastName, int month, int day, int year, double weight, double height, String gender)
 	{
-		this.fName = fName;
-		this.lName = lName;
+		// set the names.
+		this.firstName = firstName;
+		this.lastName  = lastName;
 	
 		// month validation.
 		if(month <= 0)
@@ -86,8 +87,8 @@ public class HealthProfile // class declaration.
 	}
 
 	// mutators.
-	public void set1stName(String name) { fName = name;}
-	public void set2ndName(String name) { lName = name;}
+	public void set1stName(String firstName) { this.firstName = firstName;}
+	public void set2ndName(String lastName)  { this.lastName  = lastName ;}
 	public void setMonth(int month)
        	{
 		if(month <= 0)
@@ -156,29 +157,30 @@ public class HealthProfile // class declaration.
 	}
 
 	// accessors.
-	public String get1stName() { return fName; }
-	public String get2ndName() { return lName; }
+	public String get1stName() { return firstName; }
+	public String get2ndName() { return lastName; }
 	public String getGender()  { return gender; }
 	
 	public int getMonth() { return month;}
 	public int getDay()   { return day; }
 	public int getYear()  { return year;}
 
-	public int getAge() { return java.time.LocalDate.now().getYear() - year; }
-	public int getMaxRate() { return 220 - getAge(); }
+	public int getAge()           { return java.time.LocalDate.now().getYear() - year; }
+	public int getMaxRate()       { return 220 - getAge(); }
 	public double getTargetRate() { return 70.0/100.0 * getMaxRate(); }
 
-	public double getWeight() { return weightInPounds; }
+	public double getWeight()  { return weightInPounds; }
 	public double getHeight()  { return heightInInches / 12.0; }
 	public void getBMI() 
 	{
 		double BMI = (weightInPounds * 703.0) / (heightInInches * heightInInches);
+
 		System.out.printf("Your BMI is: %.1f%n", BMI);
 		System.out.print("\n-------------BMI VALUES-------------\n");
 	        System.out.print("Underweight: less than 18.5\n");
-		System.out.print("Normal:      between 18.5 and 24.9\n");
-		System.out.print("Overweight:  between 25 and 29.9\n");
-		System.out.print("Obese:       30 or greater\n");
+		System.out.print("Normal     : between 18.5 and 24.9\n");
+		System.out.print("Overweight : between 25 and 29.9\n");
+		System.out.print("Obese      : 30 or greater\n");
 		System.out.println("====================================");
 	}
 }
