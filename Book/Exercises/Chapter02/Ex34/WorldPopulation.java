@@ -26,7 +26,7 @@ public class WorldPopulation // class declaration.
 		long currentPop = input.nextLong();
 
 		// enter the annual rate of growth.
-		System.out.print("Enter the annual gorth rate: ");
+		System.out.print("Enter the annual gorwth rate [1-100]: ");
 		double annualRate = input.nextDouble() / 100.0;
 
 		// P-future =  P-current * (1+r)^n, where n is the number of years.
@@ -39,7 +39,7 @@ public class WorldPopulation // class declaration.
 	
 		// print the population of each period.
 		System.out.println("=========================================================");
-		System.out.printf("The expected world population after 1 year:  %,d%n", pop1);
+		System.out.printf("The expected world population after 1 year : %,d%n", pop1);
 		System.out.printf("The expected world population after 2 years: %,d%n", pop2);
 		System.out.printf("The expected world population after 3 years: %,d%n", pop3);
 		System.out.printf("The expected world population after 4 years: %,d%n", pop4);
