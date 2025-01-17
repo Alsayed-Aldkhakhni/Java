@@ -11,9 +11,8 @@ import java.time.LocalDate;
 public class Manager extends Person // class declaration.
 {
 	// instance variables.
-	String email;
-	String password;
-	String managedDpt;
+	private String email;
+	private String managedDpt;
 
 	// default constructor.
 	public Manager() { super(); } 

@@ -12,16 +12,16 @@ import java.time.Period;
 public abstract class Person // class declaration.
 {
 	// instance variables.
-	long personID;
-	String firstName;
-	String lastName;
-	String address;
-	String phoneNumber;
-	double salary;
-	int age;
-	Gender gender;
-	LocalDate birthDate;
-	String password;
+	private long personID;
+	private String firstName;
+	private String lastName;
+	private String address;
+	private String phoneNumber;
+	private double salary;
+	private int age;
+	private Gender gender;
+	private LocalDate birthDate;
+	private String password;
 
 
 	// no argument constructor.

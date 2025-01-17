@@ -11,10 +11,10 @@ import java.time.LocalDate;
 public class Employee extends Person // class declaration.
 {
 	// local instance variable.
-	String jobTitle;
-	String workingDepartment;
-	double ratePerHour;
-	long empID;
+	private String jobTitle;
+	private String workingDepartment;
+	private double ratePerHour;
+	private long empID;
 	
 
 	// no argument constructor.
@@ -67,7 +67,7 @@ public class Employee extends Person // class declaration.
 	public double calculateSalary()
 	{
 		super.setSalary(getWorkedHours() * getRatePerHour());
-		return super.salary;
+		return super.getSalary();
 	}
 	
 	

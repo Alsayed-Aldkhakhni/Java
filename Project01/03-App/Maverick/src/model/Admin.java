@@ -11,7 +11,7 @@ import java.time.LocalDate;
 public class Admin extends Person // class declaration.
 {
 	// instance variables.
-	String email;
+	private String email;
 
 	// no argument constructor.
 	public Admin() { super(); }
