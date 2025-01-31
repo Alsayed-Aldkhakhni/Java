@@ -1,0 +1,14 @@
+Calculate the commission of salespeople.
+
+Initialize count to 1.
+Initialize totalValues to 0.
+
+Read the 1st item's value.
+If item's value is negative
+	Print "Invalid sales value."
+
+While item's value is positive
+	add the value to the totalValues.
+	Read the next item's value.
+
+Print the salesperson commission based on the forumla [200 + (0.09 * totalValues)].

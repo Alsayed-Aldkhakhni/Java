@@ -1,0 +1,210 @@
+//=======================================================
+// Subject: The chapter's exercises solution.
+// Date   : Jan 23, 2025
+// Author : Alsayed A. Khaleel
+//=======================================================
+
+7.1) Fill in the blank(s) in each of the following statements:
+    a) Lists and tables of values can be stored in [array] and [collections]
+    b) An array is a group of [variables] (called elements or components) 
+       containing values that all have the same [data type].
+    c) The [enhcaned for statement] allows you to iterate through an array’s 
+       elements without using a counter.
+    d) The number used to refer to a particular array element is called the 
+       element’s [index].
+    e) An array that uses two indices is referred to as a(n) [2D array].
+    f) Use the enhanced for statement [for(double dVal: double)] to walk through 
+       double array numbers.
+    g) Command-line arguments are stored in [args: array of Strings.]
+    h) Use the expression [args.length()] to receive the total number of 
+       arguments in a command line. 
+    i) Given the command java MyClass test, the first command-line argument is
+       [test argument, index args[0]].
+    j) A(n) [ellipsis (...)] in the parameter list of a method indicates that
+       the method can receive a variable number of arguments.
+
+  ------===============================================================================--------
+
+7.2) Determine whether each of the following is true or false. If false, explain why.
+     a) An array can store many different types of values.[False]
+        * Arrays are groups of values of the same data type.
+     b) An array index should normally be of type float.[False]
+        * It should be of type [int] since the indexes or the 
+          locations in the memory are numbered, they are not amounts.
+     c) An individual array element that’s passed to a method and modified in
+        that method will contain the modified value when the called method 
+        completes execution.[True, since it is passed the reference not a copy.]
+     d) Command-line arguments are separated by commas.[False]
+        * They are seperated by spaces.
+
+  ------===============================================================================--------
+
+7.3) Perform the following tasks for an array called fractions:
+     a) Declare a constant ARRAY_SIZE that’s initialized to 10.
+        * final int ARRAY_SIZE = 10; 
+     b) Declare an array with ARRAY_SIZE elements of type double, 
+        and initialize the elements to 0.
+        * double[] fraction = new double[ARRAY_SIZE]; 
+     c) Refer to array element 4.
+        * fraction[3]; # arrays are 0 indexed.
+     d) Assign the value 1.667 to array element 9.
+        * fraction[8] = 1.667;
+     e) Assign the value 3.333 to array element 6.
+        * fraction[5] = 3.333;
+
+     f) Sum all the elements of the array, using a for statement.
+        Declare the integer variable x as a control variable for the loop.
+        * double sum = 0;
+        * for(int x = 0; x < fraction.length; x++)
+            sum += fraction[x];
+
+  ------===============================================================================--------
+
+7.4) Perform the following tasks for an array called table:
+     a) Declare and create the array as an integer array that has 
+        three rows and three columns. Assume that the constant ARRAY_SIZE is 3.
+        * int[][] table = new int[ARRAY_SIZE][ARRAY_SIZE]; 
+     b) How many elements does the array contain?
+        * ARRAY_SIZE * ARRAY_SIZE (9 in our case.) 
+     c) Use a for statement to initialize each element of the array to the sum 
+        of its indices. Assume that the integer variables x and y are declared 
+        as control variables.
+        * for(x = 0; x < table.length; x++)
+          {
+            for(y = 0; y < table[x].length; y++)
+               table[x][y] = x + y;
+          }
+
+  ------===============================================================================--------
+
+7.5) Find and correct the error in each of the following program segments:
+     a) final int ARRAY_SIZE = 5; <--- Since this variable is final, 
+        ARRAY_SIZE = 10; <------------- you can not re-define its value.
+        * 2 possible solutions:
+          - remove the keyword final, so it is mutable.
+          - remove the 2nd assignment statement.
+ 
+     b) Assume int[] b = new int[10];
+        for (int i = 0; i <= b.length; i++) <-- This loop will cause an 
+           b[i] = 1;                            ArrayIndexOutOfBoundsException,
+                                                cause it will let the value of [i]
+                                                to be 10, and b[10] doen't exist.
+        * remove the [= sign] in the condition [i <= b.length].
+
+     c) Assume int[][] a = {{1, 2}, {3, 4}};
+        a[1, 1] = 5; <-- This is a syntax error, we accessing the item in 2D array
+                         by specifying its [row][col] each has it own square brackets.
+        * a[1][1] = 5;
+
+  ------===============================================================================--------
+
+7.6) Fill in the blanks in each of the following statements:
+     a) One-dimensional array p contains four elements. 
+        The names of those elements are: p[0], p[1], p[2] and p[3].
+     b) Naming an array, stating its type and specifying the number 
+        of dimensions in the array is called [declaring the array].
+     c) In a two-dimensional array, the first index identifies the [row number]
+        of an element and second index identifies the [column number] of an element. 
+     d) An m-by-n array contains [m rows, n columns and m*n elements].
+     e) The name of the element in row 3 and column 5 of array d is [ d[3][5] ].
+
+  ------===============================================================================--------
+
+7.7) Determine whether each of the following is true or false. If false, explain why.
+     a) To refer to a particular location or element within an array, 
+        we specify the name of the array and the value of the particular element.
+        * False, we do it by the index of the element not its value.
+     b) An array declaration reserves space for the array.
+        * False, it is just a hint to the compiler that
+          you will meet this array sooner.
+     c) To indicate that 100 locations should be reserved for integer array p,
+        you write the declaration p[100];
+        * False, it is [ p = new int[100] ];
+     d) An application that initializes the elements of a 15-element array to zero 
+        must contain at least one for statement.
+        * False, it is not nessecary since the compiler do it implicitly.
+     e) An application that totals the elements of a two-dimensional array must contain
+        nested for statements.
+        * True, to iterate through the matrix.
+
+  ------===============================================================================--------
+
+7.8) Write Java statements to accomplish each of the following tasks:
+     a) Display the value of element 6 of array f.
+        * System.out.println(f[6]);
+     b) Initialize each of the five elements of one-dimensional integer array g to 8.
+        * for(int i = 0; i < g.length; i++) g[i] = 8;
+     c) Total the 100 elements of floating-point array c.
+        * double total = 0.0; for(double val : c) total += val;
+     d) Copy 11-element array a into the first portion of array b, which contains 34 elements.
+        * System.arraycopy(a, 0, b, 0, 11);
+     e) Determine and display the smallest and largest values contained in 99-element floating-
+        point array w.
+        * Arrays.sort(w); System.out.println("Smallest: " + w[0] + "\nLargest : " + w[98]);
+
+  ------===============================================================================--------
+
+7.9) Consider a two-by-three integer array t.
+     a) Write a statement that declares and creates t.
+        * t = new [2][3];
+     b) How many rows does t have?
+        * 2 rows.
+     c) How many columns does t have?
+        * 3 cols.
+     d) How many elements does t have?
+        * 2*3 = 6.
+     e) Write access expressions for all the elements in row 1 of t.
+        * t[0][0];
+        * t[0][1];
+        * t[0][2];
+     f) Write access expressions for all the elements in column 2 of t.
+        * t[1][0];
+        * t[1][1];
+        * t[1][2];
+     g) Write a single statement that sets the element of t in row 0 and column 1 to zero.
+        * t[0][1] = 0;
+     h) Write individual statements to initialize each element of t to zero.
+        * t[0][0] = 0;
+        * t[0][1] = 0;
+        * t[0][2] = 0;
+        * t[1][0] = 0;
+        * t[1][1] = 0;
+        * t[1][2] = 0;
+     i) Write a nested for statement that initializes each element of t to zero.
+        * for(int i = 0; i < t.length; i++)
+            for(int j = 0; j < t[i].length; j++)
+                t[i][j] = 0;
+     j) Write a nested for statement that inputs the values for the elements of t from the user.
+        * Scanner input = new Scanner(System.in);
+        * for(int i = 0; i < t.length; i++)
+            for(int j = 0; j < t[i].length; j++)
+                t[i][j] = input.nextInt();
+     k) Write a series of statements that determines and displays the smallest value in t.
+        * int smallest = t[0][0];
+        * for(int i = 0; i < t.length; i++)
+            for(int j = 0; j < t[i].length; j++)
+            {
+              if(t[i][j] < smallest)
+                 smallest = t[i][j];
+            }
+	* System.out.println("The smallest value is: " + smallest); 
+     l) Write a single printf statement that displays the elements of the first row of t.
+        * System.out.printf("%d %d %d", t[0][0], t[0][1], t[0][2]);
+     m) Write a statement that totals the elements of the third column of t. Do not use repetition.
+        * int total = t[0][2] + t[1][2];
+     n) Write a series of statements that displays the contents of t in tabular format. List the
+        column indices as headings across the top, and list the row indices at the left of each row.
+        * System.out.println("   0  1  2");
+	* System.out.println("==========");
+	* for(int i = 0; i < t.length; i++)
+	  {
+	    System.out.print(i + "| ");
+	    for(int j = 0; j < t[i].length; j++)
+		System.out.print(t[i][j] + "  ");
+			
+            System.out.println();
+          }
+
+  ------===============================================================================--------
+
+

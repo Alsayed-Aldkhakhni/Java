@@ -1,0 +1,16 @@
+//================================================================
+ * Subject: What is the output of a piece of code.
+ * Date   : December 12, 2024
+ * Author : Alsayed A. Khaleel
+//================================================================
+
+Q) What does the following code print?
+    System.out.print("*");
+    System.out.print("***");
+    System.out.print("*****");
+    System.out.print("****");
+    System.out.println("**");
+
+Output)
+***************
+

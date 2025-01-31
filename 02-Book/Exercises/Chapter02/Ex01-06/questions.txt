@@ -1,0 +1,106 @@
+//================================================================
+ * Subject: Chapter 02 exercises' solutions of questions [01, 06].
+ * Date   : December 11, 2024
+ * Author : Alsayed A. Khaleel
+//================================================================
+
+Q2.1:
+a) A(n) [ Opening curly brace '{' ]  begins the body of every method, and a(n) [ Closing curly brace '}' ] ends the body of every method.
+b) You can use the [ if ] statement to make decisions.
+c) [ // ] begins an end-of-line comment.
+d) [ Tab, spaces, indentations] are called white space.
+e) [ Keywords] are reserved for use by Java.
+f) Java applications begin execution at method [ main ].
+g) Methods [ print, println, printf ] and display information in a command window.
+
+                  *******************************************************************************************
+
+Q2.2:
+a) Comments cause the computer to print the text after the [//] on the screen when the program executes.
+   * False, it ignores the text after it until the line's end.
+b) All variables must be given a type when they’re declared.
+   * True, To allocate the suitable number of bytes.
+c) Java considers the variables number and NuMbEr to be identical.
+   * False, Java is case-sensitive, which diffrentiate between upper and lower case.
+d) The remainder operator (%) can be used only with integer operands.
+   * False, It can be used with fractional numbers as [12.5, 0.20]
+e) The arithmetic operators *, /, %, + and - all have the same level of precedence.
+   * False, 1st 3 has the higher precedence and the last 2 has the lower one.
+
+                  *******************************************************************************************
+
+Q2.3:
+a) Declare variables c, thisIsAVariable, q76354 and number to be of type int.
+   * int c, thisIsAVariable, q76354, number;
+b) Prompt the user to enter an integer.
+   * System.out.print("Enter an integer: ");
+c) Input an integer and assign the result to int variable value.
+   * int iVar = input.nextInt();
+d) Print "This is a Java program" on one line in the command window.
+   * System.out.println("This is a Java program");
+e) Print "This is a Java program" on two lines in the command window.
+   * System.out.printf("%s%n%s", "This is a Java", "program");
+f) If the variable number is not equal to 7, display "The variable number is not equal to 7". 
+   * if(number != 7) System.out.println("The variable number is not equal to 7");
+
+                  *******************************************************************************************
+
+Q2.4:
+a) if (c < 7); <-- Because of this ";" the compiler sees it as an "if condition" followed by an empty statement. so, 
+   System.out.println("c is less than 7"); <-- this statement will be printed either the condition is false since it doesn't belong to it.
+
+b) if (c => 7) <-- This is a syntax error since the operator is [>=] not [=>].
+   System.out.println("c is equal to or greater than 7");
+
+                  *******************************************************************************************
+Q2.5:
+a) State that a program will calculate the product of three integers.
+   * // This program gonna calculate the product of 3 ints.
+b) Create a Scanner called input that reads values from the standard input.
+   * Scanner input = new Scanner(System.in);
+c) Declare the variables x, y, z and result to be of type int.
+   * int x, y, z, result;
+d) Prompt the user to enter the first integer.
+   * System.out.print("Enter the 1st int: ");
+e) Read the first integer from the user and store it in the variable x.
+   * x = input.nextInt();
+f) Prompt the user to enter the second integer.
+   * System.out.print("Enter the 2nd int: ");
+g) Read the second integer from the user and store it in the variable y.
+   * y = input.nextInt();
+h) Prompt the user to enter the third integer.
+   * System.out.print("Enter the 3rd int: ");
+i) Read the third integer from the user and store it in the variable z.
+   * z = input.nextInt();
+j) Compute the product of the three integers contained in variables x, y and z, and assign the result to the variable result.
+   * result = x * y * z;
+k) Use System.out.printf to display the message "Product is" followed by the value of the variable result.
+   * System.out.printf("Product is: %d", result);
+
+                  *******************************************************************************************
+
+Q2.6: Using Exercise 2.5, write a complete program that calculates and prints the product of three integers.
+
+import java.util.Scanner; // import declaration, to use 'Scanner' class.
+public class Product      // class declaration.
+{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);     // read data from the user at the keyboard.
+        System.out.print("Enter the 1st integer: ");// prompt him to enter the first integer.
+        int x = input.nextInt();                    // read the integer.
+        
+        System.out.print("Enter the 2nd integer: ");// prompt for the 2nd one.
+        int y = input.nextInt();                    // read the second integer.
+        
+        System.out.print("Enter the 3rd integer: ");// prompt for the 3rd.
+        int z = input.nextInt();                    // read the third integer.
+        
+        int result = x * y * z;                     // carry out the calculation.
+        
+        System.out.printf("The product is: %d%n", result); // print the value to the user.
+    }
+}
+
+                  *******************************************************************************************
+

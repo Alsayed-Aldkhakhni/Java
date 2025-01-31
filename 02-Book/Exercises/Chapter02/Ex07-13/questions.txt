@@ -1,0 +1,126 @@
+//=============================================================
+ * Subject: Chapter 02 exercises' solutions questions [07, 13].
+ * Date   : December 11, 2024
+ * Author : Alsayed A. Khaleel
+//=============================================================
+
+Q2.7:
+a) [ Comments ] are used to document a program and improve its readability.
+b) A decision can be made in a Java program with a(n) [ if statement ].
+c) Calculations are normally performed by [ arithmetic ] statements.
+d) The arithmetic operators with the same precedence as multiplication are [ division, reminder].
+e) When parentheses in an arithmetic expression are nested, the [ innermost ] set of parentheses is evaluated 1st.
+f) A location in the computer’s memory that may contain different values at various times
+    throughout the execution of a program is called a(n) [ variable ].
+
+               ******************************************************************************************************
+Q2.8:
+a) Display the message "Enter an integer: ", leaving the cursor on the same line.
+   * System.out.print("Enter an integer: ");
+b) Assign the product of variables b and c to variable a.
+   * a = b * c;
+c) Use a comment to state that a program performs a sample payroll calculation.
+   * // A program that performs a sample payroll calculation.
+
+               ******************************************************************************************************
+
+Q2.9:
+a) Java operators are evaluated from left to right.
+   * False, not all of them based on their associativity there are some its from 
+     left-to-right as [*, /, %] and other from right-to-left as [=].
+b) The following are all valid variable names: _under_bar_, m928134, t5, j7, her_sales$,
+    his_$account_total, a, b$, c, z and z2.
+   * True.
+c) A valid Java arithmetic expression with no parentheses is evaluated from left to right.
+   * False, based on from which part the compiler will start evaluation as
+     x = 12 + 5 * 11 <-- this will be evaluated from right to left since [*] has higher precedence.
+     y = 12 * 5 + 11 <-- and this will be from left to right.
+d) The following are all invalid variable names: 3g, 87, 67h2, h22 and 2h.
+   * False, the 4th one is true since it starts with a letter 
+     and the rest are not since they starts with digits.
+
+               ******************************************************************************************************
+
+Q2.10: 
+*** Assuming that x = 2 and y = 3 ***
+
+a) System.out.printf("x = %d%n", x);
+   * x = 2
+b) System.out.printf("Value of %d + %d is %d%n", x, x, (x + x));
+   * Value of 2 + 2 is 4
+c) System.out.printf("x =");
+   * x =
+d) System.out.printf("%d = %d%n", (x + y), (y + x));
+   * 5 = 5
+
+               ******************************************************************************************************
+
+Q2.11:
+a) p = i + j + k + 7;
+   * The variable [p] will be modified.
+b) System.out.println("variables whose values are modified");
+   * Can you see any variable?
+c) System.out.println("a = 5");
+   * I can't see variable, can you?
+d) value = input.nextInt();
+   * The variable [value] will be modifiyed.
+
+               ******************************************************************************************************
+
+Q2.12:
+*** Given that y = ax3 + 7 ***
+* The true statements are [a, d, e]
+
+a) y =  a * x * x * x  + 7;
+ * y = (a * x * x * x) + 7;
+ * y =  ax3 + 7;
+
+b) y =  a * x * x  * (x + 7);
+ * y = (a * x * x) * (x + 7);
+ * y =  ax3 + 7ax2;
+
+c) y =  (a * x) * x * (x + 7);
+ * y = ((a * x) * x) * (x + 7);
+ * y =  ax3 + 7ax2;
+
+d) y =  (a * x) * x * x  + 7;
+ * y = ((a * x) * x * x) + 7;
+ * y =  ax3 + 7;
+
+e) y =  a * (x * x * x)  + 7;
+ * y = (a * (x * x * x)) + 7;
+ * y =  ax3 + 7;
+
+f) y =  a * x  * (x * x + 7); 
+ * y = (a * x) * (x * x + 7);
+ * y =  ax3 + 7ax;
+
+               ******************************************************************************************************
+
+Q2.13:
+
+a) x = 7 + 3 * 6 / 2 - 1;
+ *       3   1   2   4   <-------------- operators precedence of evaluation.
+ * x = 7 +   18  / 2 - 1
+ * x = 15;
+ 
+b) x = 2 % 2 + 2 * 2 - 2 / 2;
+ *       1   4   2   5   3   <---------  operators precedence of evaluation.
+ * x =   0   +   4   -   1
+ * x = 3;
+
+c) x = (3 * 9 * (3 + (9 * 3 / (3))));
+ *     7  8   9 5  6 2  3   4  1 <------ operators precedence of evaluation.
+ * x = (3 * 9 * (3 + (9 * 3 / 3)));
+ * x = (3 * 9 * (3 + (27 / 3)));
+ * x = (3 * 9 * (3 + (9)));
+ * x = (3 * 9 * (3 + 9));
+ * x = (3 * 9 * (12));
+ * x = (3 * 9 * 12);
+ * x = (27 * 12);
+ * x = (324);
+ * x = 324;
+
+               ******************************************************************************************************
+
+

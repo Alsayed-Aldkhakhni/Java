@@ -1,0 +1,18 @@
+-----------------------------------------------------------------------------------
+* Subject  : Why using the parent's ctor in the 1st statement of the child's.
+*
+* Date     : September 21, 2024
+*
+* Author   : Alsayed A. Aldkhakhni
+*
+* Last mod : September 21, 2024
+-----------------------------------------------------------------------------------
+
+*  Calling the parent's constructor in the child's one as the first statement is to
+   construct the parent's member data either by suppling arguments or setting the
+   default values and ensure that if you call any methods on the parent class in
+   your constructor, the parent class has already been set up correctly and you 
+   can call that method normally.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

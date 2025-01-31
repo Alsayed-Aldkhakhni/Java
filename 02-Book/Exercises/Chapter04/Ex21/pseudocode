@@ -1,0 +1,15 @@
+Find the largest number of 10 numbers.
+
+Initialize counter to 1.
+Initialize number to 0.
+Initialize largest to 0.
+
+While counter is less than or equal to 10
+	Prompt the user to input the next number.
+
+	If number is greater than largest
+		set the largest to number.
+
+Print the largest number.
+
+

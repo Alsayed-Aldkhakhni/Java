@@ -1,0 +1,59 @@
+//================================================================
+ * Subject: Chapter 03 exercises' solutions of questions [05, 10].
+ * Date   : December 12, 2024
+ * Author : Alsayed A. Khaleel
+//================================================================
+
+Q3.5: What’s the purpose of keyword new? Explain what happens when you use it.
+
+* Purpose of new:
+  - It is used to instantiate an object of the class type following it.
+
+* What it does:
+  - 1st, it allocates space in memory to the object
+  - 2nd, invokes its constructor to build and intialize the instance variables.
+
+                        *********************************************************************************************
+
+Q3.6: What is a default constructor?
+      How are an object’s instance variables initialized if a class has only a default constructor?
+
+* What is a default ctor:
+  - It is a constructor that takes no arguments and is created by the compiler to build the object.
+ 
+* How are an object’s instance variables initialized if a class has only a default constructor?
+  - The compiler set the default values to those variables who has no explicit initiale values,
+    which is 0 for [byte, char, long, float, double, int] and false for [boolean] and null for
+    [referenced variables].
+
+                        *********************************************************************************************
+
+Q3.7: Explain the purpose of an instance variable.
+
+* Each object has its own attributes and themes, to store such values we have to use variables.
+
+                        *********************************************************************************************
+
+Q3.8: Most classes need to be imported before they can be used in an app.
+      Why is every app allowed to use classes System and String without first importing them?
+
+* Since those classes [String, System] are in package [java.lang] which is imported implicityl
+   in each Java appl
+
+                        *********************************************************************************************
+
+Q3.9: Explain how a program could use class Scanner without importing it.
+
+* By providing its fully-qualified class name which is [packageName.subPackageName.ClassName]
+
+                        *********************************************************************************************
+
+Q3.10: Explain why a class might provide a set method and a get method for an instance variable.
+
+* Those methods services the data hiding concept which is protecting the data from being usded wrongly
+   as assigning invalid values, using validation code inside the set method, and controlling the data
+   format using get methods. And to use this techniques, you may have to make the instance variables
+   private to enforce the client who uses your class to supprot valid data as you see it valid.
+
+                        *********************************************************************************************
+
