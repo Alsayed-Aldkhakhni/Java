@@ -1,0 +1,25 @@
+//=================================================
+// Subject: Chapter 16, Ex03 answers.
+// Date   : Jan 29, 2025
+// Author : Alsayed A. Khaleel
+//=================================================
+
+16.3) Define each of the following terms:
+      a) Collection : It is an interface that is the parent of collections [List, Set, Map, ArrayList].
+      b) Collections: It is a class extends the Collection interface contains some pre-defined static
+                      methods used to sorting, searching and coping.
+      c) Comparator : It is an interface that is used to specifiy the ordering apporach. 
+      d) List       : It is an interface that stores items and those may be dupblicated.
+      e) load factor: It is the ratio of the filled slots to the total cells of the hash table.
+                      or two different keys are hashed into the same cell [index] in the array.
+      f) collision  : It is a situation happend when the target slot to insert in is not empty.
+      g) space/time 
+         trade-off 
+         in hashing : It is choosing between the memory utilization and program execution's speed
+                      since the collisions make the hashing more and more to find an empty room
+                      to insert the item, time consuming - memory utilization, but if we decreased
+                      the load factor, less hasing [less time] and less memory utilization. 
+      h) HashMap    : It is a Collection that stores its key-value pairs in a hash table.
+
+
+

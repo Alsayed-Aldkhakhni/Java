@@ -1,0 +1,13 @@
+//=================================================
+// Subject: Chapter 16, Ex11 answers.
+// Date   : Jan 29, 2025
+// Author : Alsayed A. Khaleel
+//=================================================
+
+16.11) Explain the operation of each of the following methods of the Properties class:
+	a) load       : Restore the properties data stored in the passed file [OutputStream].
+	b) store      : Store properties in a supported file [InputtStream].
+	c) getProperty: Retrieve the property associated to the supported key.
+	d) list       : displaying the list of properties.
+
+

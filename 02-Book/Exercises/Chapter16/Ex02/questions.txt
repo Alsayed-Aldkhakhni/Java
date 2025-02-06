@@ -1,0 +1,28 @@
+//=================================================
+// Subject: Chapter 16, Ex02 answers.
+// Date   : Jan 29, 2025
+// Author : Alsayed A. Khaleel
+//=================================================
+
+16.2) Determine whether each statement is true or false. If false, explain why.
+      a) Values of primitive types may be stored directly in a collection.
+         * [False]. Collections works on references, so it needs primitives to be wrraped.
+      b) A Set can contain duplicate values.
+         * [False]. Set accepts no duplicates.
+      c) A Map can contain duplicate keys.
+         * [False]. Keys must be unique since they determines values, so we need a unique
+                    way to differentiate between such values.
+      d) A LinkedList can contain duplicate values.
+         * [True].
+      e) Collections is an interface.
+         * [False]. It is a class.
+      f) Iterators can remove elements.
+         * [True].
+      g) With hashing, as the load factor increases, the chance of collisions decreases.
+         * [False]. It is increasing, the memory utilization decreases.
+      h) A PriorityQueue permits null elements.
+         * [False]. Causing NullPointerException.
+
+
+
+

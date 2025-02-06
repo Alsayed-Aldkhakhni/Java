@@ -1,0 +1,17 @@
+//=================================================
+// Subject: Chapter 16, Ex05 answer.
+// Date   : Jan 29, 2025
+// Author : Alsayed A. Khaleel
+//=================================================
+
+16.5) Explain why inserting additional elements into a Vector object 
+      whose current size is less than its capacity is a relatively fast 
+      operation and why inserting additional elements into a Vector
+      object whose current size is at capacity is a relatively slow operation.
+
+* Since if there is no room to insert the next item in, the vector expand the 
+  capacity by re-allocating new memory space and coping all items in the old
+  reference and insert the new item.
+
+
+

@@ -1,0 +1,24 @@
+//=================================================
+// Subject: Chapter 16, Ex04 answers.
+// Date   : Jan 29, 2025
+// Author : Alsayed A. Khaleel
+//=================================================
+
+16.4) Explain briefly the operation of each of the following methods of class Vector:
+      a) add              : Inserts an item anywhere in the Vector object.
+      b) set              : Overwrite the current value at passed 
+                            index with the passed value.
+      c) remove           : Remove the top of the vector object.
+      d) removeAllElements: Clear the items in the vector.
+      e) removeElementAt  : Remove the item at supported index.
+      f) firstElement     : Remove the 1st item in the vector.
+      g) lastElement      : Remove the last item in the vector.
+      h) contains         : Check if an item is in the vector.
+      i) indexOf          : Return the index of supported item.
+      j) size             : How many items in the vector.
+      k) capacity         : The initial number of items can this
+                            object hold without expanding.
+
+
+
+

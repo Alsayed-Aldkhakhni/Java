@@ -1,0 +1,13 @@
+//=================================================
+// Subject: Chapter 16, Ex08 answer.
+// Date   : Jan 29, 2025
+// Author : Alsayed A. Khaleel
+//=================================================
+
+16.8) Explain briefly the operation of each of the following Iterator-related methods:
+	a) iterator: Returns an iterator object to the calling collection.
+	b) hasNext : Checks whether the current item, the iterator points to, has
+		     another next item.
+	c) next    : Move the iterator to the next item in the object pointing to.
+
+

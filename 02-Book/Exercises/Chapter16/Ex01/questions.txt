@@ -1,0 +1,24 @@
+//=================================================
+// Subject: Chapter 16, Ex01 answers.
+// Date   : Jan 29, 2025
+// Author : Alsayed A. Khaleel
+//=================================================
+
+16.1) Fill in the blanks in each of the following statements:
+      a) A(n) [Iterator object] is used to iterate through a collection 
+         and can remove elements from the collection during the iteration.
+      b) An element in a List can be accessed by using the element’s [index].
+      c) Assuming that myArray contains references to Double objects, [wrraping "Auto-boxing"] 
+         occurs when the statement "myArray[0] = 1.25;" executes.
+      d) Java classes [ArrayList, Vector] provide the capabilities of arraylike 
+         data structures that can resize themselves dynamically.
+      e) If you do not specify a capacity increment, the system will [doublicate]
+         vector's size each time additional capacity is needed.
+      f) You can use a(n) [unmodifiableCollection static method.] to create a collection
+         that offers only read-only access to others while allowing read–write access to yourself.
+      g) Assuming that myArray contains references to Double objects, [Auto-unboxing] occures when
+         statement "double number = myArray[0];" executes.
+      h) Collections algorithm [disjoint] determines if two collections have elements in common.
+
+
+

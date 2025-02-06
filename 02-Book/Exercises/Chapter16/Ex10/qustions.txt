@@ -1,0 +1,17 @@
+//=================================================
+// Subject: Chapter 16, Ex10 answers.
+// Date   : Jan 29, 2025
+// Author : Alsayed A. Khaleel
+//=================================================
+
+16.10) Determine whether each of the following statements is true or false.
+         If false, explain why.
+	a) Elements in a Collection must be sorted in ascending order before 
+	   a binarySearch may be performed. [True]
+	b) Method first gets the first element in a TreeSet. [True].
+	c) A List created with Arrays method asList is resizable. [False].
+           * You just can use [set()] method to overwrite the existing
+             elements only.
+
+
+

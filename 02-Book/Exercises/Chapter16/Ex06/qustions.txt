@@ -1,0 +1,13 @@
+//=================================================
+// Subject: Chapter 16, Ex06 answer.
+// Date   : Jan 29, 2025
+// Author : Alsayed A. Khaleel
+//=================================================
+
+16.6) By extending class Vector, Java’s designers were able to create class Stack quickly. 
+      What are the negative aspects of this use of inheritance, particularly for class Stack?
+
+* Vector method [add] can be used to insert an element anywhere in a stack, 
+  an operation that could “corrupt” the stack.
+
+

@@ -1,0 +1,15 @@
+//=================================================
+// Subject: Chapter 16, Ex09 answer.
+// Date   : Jan 29, 2025
+// Author : Alsayed A. Khaleel
+//=================================================
+
+16.9) Explain briefly the operation of each of the following methods of class HashMap:
+	a) put        : Associate a value to a key.
+	b) get        : Return the value associated with the key.
+	c) isEmpty    : Checks if the hash table, used to store the value, is empty.
+	d) containsKey: Checks if the HashMap object contains this key or not.
+	e) keySet     : Return the keys of the HashMap as an unordered set.
+
+
+
