@@ -1,0 +1,11 @@
+/*
+
+  * Ex03: public class Array<T> {}
+  
+  * create a generic class named Array that used
+  * to operate on operands specified as needed
+  * while instantiating an object of this class.
+  
+ */
+
+
