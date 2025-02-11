@@ -1,0 +1,215 @@
+Subject: Tips from the book for better code writting.
+Date   : November 23, 2024
+===========================================================
+About: Chapter01
+
+01) Avoid reinventing the wheel, use the existing high
+    quality pieces whenever possible.
+
+02) Java API [Java class library] is a collection of 
+    pre-definied classes and mehtods.
+
+03) The X.java file has 5 steps to be runned on our machine
+    1. Edit the source code.
+    2. Interpret source into bytecodes X.java -> X.class
+    3. Load into memory.
+    4. Verifiey the content of bytecode file.
+    5. Transelate the bytecode into machine language using
+       JIT compiler 'Just In Time'.
+
+04) The java X.class is an error ;)
+05) 
+
+-----------------------------------------------
+About: Chapter06
+****************
+
+01) Package: Is a group of related classes aimed
+             for reusablity.
+
+02) Why using methods ?
+    * DRY: Don't repeat yourself, we write the 
+           body of the method once and use it
+           many times from different sections
+           in the program.
+    * divide and conquer your program makes 
+      things simple and easy to manage.
+
+03) Methods must be:
+    * single purpose and well-defined task.
+    * named with a name expresses its task.
+
+04) All methods in <java.lang.Math> class are static.
+
+05) To use static methods to access non-static vars
+    or methods , you have to pass it a reference to 
+    an object of that class, it won't be able to edit 
+    instance vars or call instance methods.
+
+06) Instance methods can access both class vars and
+    instance vars also. 
+
+07) Method must be in a class and outside any other
+    methods.
+
+08) Method declaration:
+    * accessModifier returnDataType methodName(arg1, arg2, ...)
+      {
+         // method body and its logic here
+         // and the returned value [if any].
+      }
+
+    --> Pass arguments to the method if any.
+
+09) Method called as:
+    * static method:
+      - ClassName.methodName(arg1, arg2, ...);
+    * instance method:
+      - objectName.methodName(arg1, arg2, ...);
+    
+    ---> You pass arguments if any.
+
+10) Method-call stack it is a data structure that
+    contains the return addresses of the calling
+    methods and each call contains its local vars
+    in a section called "Activation record" or 
+    "stack frame" so each method knows its args.
+
+11) 
+
+
+About: Chapter14
+****************
+
+00) String are a sequence of characters and based [0].
+01) Java treats String objects that have the same value as 
+     one object and many references.
+
+02) Strings objects are immutable use them when data won't be modified.
+
+03) Member functions of String class:
+    - length()
+    - charAt(int)
+    - getChars(int stiSrc, int 1pastiSrc, char[] dst, int stiDst) : void
+    - compareTo(s) : int
+    - equals(s) : boolean
+    - equalsIgnoreCase(s) : boolean
+    - regionMatches(csi, S, Ssi, chars#) : boolean
+    - regionMatches(true, ...) : boolean // ignore the sensitivity, it is false by default.
+    - startsWith(s) : boolean
+    - startsWith(s, si) : boolean
+    - endsWith(s) : boolean
+    - indexOf(c or s) : int
+    - indexOf(c, si) : int
+    - lastIndexOf(c or s)
+    - lastIndexOf(c, si) 
+    - substring(xi) : s     // [x, the end]
+    - substring(xi, yi) : s // [x, y[
+    - concat(s) : s         // < + > operator can do so.
+    - replaceAll(regx, s) : s
+    - replaceFirst(regx, x) : s // replaces 1st occrunce of regx.
+    - split(regx) : s[]
+
+    // the following methods do not modify
+    //  the caller object they return edited copy.
+    - toUpperCase()
+    - toLowerCase()
+    - trim()
+    - toCharArray()
+    - replace(cOld, cNew)
+    - replace(sOld, sNew)
+    - String.valueOf(anyDataType) : String
+    - String.valueOf(char[], si, chars#)
+
+04) <==> is not as <equals()>
+     the 1st compares the references and the 2nd compares the contents.
+
+05) every object in Java has a toString() to return the string representation
+     of the object except the primitives.
+
+06) StringBuilder is a dynamic string (modifiable and resizable). 
+
+07) Always use StringBuilder in progs that need String processing.
+
+08) If the StringBuilder is gonna be increased in capacity multiple
+     times, use one with big capacity to avoid performace degrading.
+
+08) Member functions of class StringBuilder:
+    - StringBuilder()   // default 16 bytes.
+    - StringBuilder(s)  // capacity s.length() + 16.
+    - capacity()        // total bytes.
+    - length()          // used  bytes.
+    - ensureCapacity(x) // resize capacity.
+    - setLength(x)      // change used bytes.
+    - charAt(x)
+    - setCharAt(x, c)
+    - getChars()        // as same as String's one.
+    - reverse()
+    - append(anyType)
+    - insert(i, anyType)
+    - delete(x, y)     // [x, y) 
+    - deleteCharAt(i)
+
+09) type-wrapper classes that is made to treat primitives as objects.
+     each primitive has a correponding class type-wrapper.
+
+   - Character class static methods
+     - isDigit(c)
+     - isLowerCase(c)
+     - isUpperCase(c)
+     - toLowerCase(c)
+     - toUpperCase(c)
+     - isLetterOrDigit(c)
+     - isJavaIdentifierPart(c)
+     - isJavaIdentifierStart(c)
+     - isDefined(c) -------------> // check if c is defined in the unicode range.
+    
+     // i don't understand those 0_0. 
+     - digit(c, radix)  ---------> // return the digit represented by c.
+     - forDigit(digit, radix) ---> // return the character of that digit.
+
+10) class Character treats character literals as objects
+    - Character c1 = 'A';  // is an object now, not a primitive. called 'autoboxing'.
+    - c1.charValue() : c
+    - c1.toString()  : s
+    - c1.equals(c2)  : boolean
+
+11) Tokenizing Strings: breake the string into words based on the delimiter.
+    - split(delimiter) : String[]
+ 
+12) Regular expressions:
+    - [] -------> range of character just match one.
+    - [a-z] <---- just match one letter in the range [a, z]
+    - [A-Z] <---- the same but [A, Z]
+    - [^a-z] <--- match anything but the range.
+    - [a-zA-Z] <- match any lower or upper case character.
+    - "A[a-z]*"<- needs A + any lower characher + zero or more characters from the preceding subexpression.
+    - "A[a-z]+"<- the same as the privous but the '+' needs one or more characters.
+    - [0-9] <---- matchs a digit in [0, 9]
+    - [5-7] <---- the same, [5, 7]
+    - "Hi (x|y)"  takes the Hi and one of the x, y so 'Hi x' or 'Hi y'.
+    - ['-] <----- match one <-> or <'>
+
+    // those called character classes.
+    - \d <------- any digit 1, 2, 5 or 8. !\d = \D
+    - \s <------- any space [tab, white-space, form feed].  !\s = \S
+    - \w <------- any word character [upper, lower, digit or underscore]. !\w = do you know?!
+
+13) Quantifiers: 
+    - * <----- zero or more.
+    - + <----- one or more.
+    - ? <----- zero or one.
+    - {n} <--- only n characters.
+    - {n,m} <- match characters [n, m] occrunces.
+    - {n,} <-- match n or more occrunces but not below.
+    
+    * examples:
+      - "A{4}" <---- AAAA
+      - "\\d{2,}" <- any 2 digits or more.
+      - "\\w{2,5} <- any 2 or 5 characters or in between.
+      - (.) <------- capture this character in this position.
+      - ^  <-------- flags this is the position at it string starts.
+      - $  <-------- flags this is the position at it string ends.
+      - \1 <-------- match 1st character you just captured by (.).
+      - /  <-------- negate the following expression.
+      - 
