@@ -1,0 +1,19 @@
+// ***********************************************
+// File name: questions.txt
+// Subject  : Solve the Exercise 8.2.
+// Date     : Feb 19, 2025
+// Author   : Alsayed A. Khaleel
+// ***********************************************
+
+* (Based on Section 8.14)
+  Explain the notion of package access in Java. Explain the negative
+  aspects of package access.
+
+* The classes of the same package can access those members of each other
+  if they have a reference to the object or the class is loaded into the 
+  memory while execution when they are defined with no access modifier.
+
+* This technique kills the concept of data hiding, since all the classes
+  that can access those members [data] will have no problem with modifying
+  them even with invalid values.
+  

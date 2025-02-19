@@ -1,0 +1,13 @@
+// ***********************************************
+// File name: questions.txt
+// Subject  : Solve the Exercise 8.3.
+// Date     : Feb 19, 2025
+// Author   : Alsayed A. Khaleel
+// ***********************************************
+
+(Q)* What happens when a return type, even void,
+     is specified for a constructor?
+
+(A)* The compiler permits naming methods
+     with the constructor's name and will work normally
+  
