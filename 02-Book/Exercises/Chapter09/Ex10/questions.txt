@@ -1,0 +1,27 @@
+///////////////////////////////////////////////////////////
+// Subject: Solve the Exercises 10 of chapter 10.
+// Date   : Feb 20, 2025
+// Author : Alsayed A. Khaleel
+///////////////////////////////////////////////////////////
+
+9.10) Write a line of code that performs each of the following tasks:
+    a) Specify that class PieceWorker inherits from class Employee.
+
+       class PieceWorker extends Employee
+
+    b) Call superclass Employee’s toString method from subclass PieceWorker’s toString method.
+
+       public String toString()
+       {
+        return "some text" + super.toString();
+       }
+
+    c) Call superclass Employee’s constructor from subclass PieceWorker’s constructor
+       assume that the superclass constructor receives three Strings representing
+       the first name, last name and social security number.
+
+       public PieceWorker(String firstName, String lastName, String SSN)
+       {
+        super(firstName, lastName, SSN);
+       }
+       

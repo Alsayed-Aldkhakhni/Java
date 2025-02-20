@@ -1,0 +1,33 @@
+///////////////////////////////////////////////////////////
+// Subject: Solve the Self-Review Exercises of chapter 10.
+// Date   : Feb 20, 2025
+// Author : Alsayed A. Khaleel
+///////////////////////////////////////////////////////////
+
+
+9.1) Fill in the blanks in each of the following statements:
+    a)[Inheritance] is a form of software reusability in which new classes acquire
+       the members of existing classes and embellish those classes with new capabilities.
+    b) A superclass’s [protected, public] members can be accessed in the superclass
+       declaration and in subclass declarations.
+    c) In a(n) [Is-a] relationship, an object of a subclass can also be treated as an object of
+       its superclass.
+    d) In a(n) [Has-a] relationship, a class object has references to objects of other classes as
+       members.
+    e) In single inheritance, a class exists in a(n) [hierarchal] relationship with its subclasses.
+    f) A superclass’s [public] members are accessible anywhere that the program has a reference
+       to an object of that superclass or to an object of one of its subclasses.
+    g) When an object of a subclass is instantiated, a superclass [no-argument constructors] is called
+       implicitly or explicitly.
+    h) Subclass constructors can call superclass constructors via the keyword [super].
+
+
+9.2) State whether each of the following is true or false. If a statement is false, explain why.
+    a) Superclass constructors are not inherited by subclasses. [True].
+    b) A has-a relationship is implemented via inheritance. [False],
+       A has-a relationship is implemented via composition.
+    c) A Car class has an is-a relationship with the SteeringWheel and Brakes classes. [False],
+       A Car class has a has-a relationship with the SteeringWheel and Brakes classes.
+    d) When a subclass redefines a superclass method by using the same signature,
+       the subclass is said to overload that superclass method. [False],
+       This is called overriding.
