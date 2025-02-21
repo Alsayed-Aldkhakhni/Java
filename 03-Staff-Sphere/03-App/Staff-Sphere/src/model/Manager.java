@@ -34,7 +34,7 @@ public class Manager extends Person // class declaration.
 	public void setEmail(String email) throws IllegalArgumentException
 	{
 		if (! isEmailValid(email))
-			throw new IllegalArgumentException("Invlaid email");
+			throw new IllegalArgumentException("Invalid email.");
 
 		this.email = email;
 	}
@@ -45,7 +45,7 @@ public class Manager extends Person // class declaration.
 	public void   setManagedDpt(String managedDpt) throws IllegalArgumentException
 	{
 		if(! isDeptValid(managedDpt))
-			throw new IllegalArgumentException("Invalid department format.");
+			throw new IllegalArgumentException("Invalid department and/or format.");
 		
 		this.managedDpt = managedDpt;
 	}
@@ -55,7 +55,7 @@ public class Manager extends Person // class declaration.
 	public boolean isEmailValid(String email)
 	{
 		// manager email format: department.manager.mgrName@companyName.com
-		return email.matches(getManagedDpt() + ".manager." + getFirstName().toLowerCase() + "@ABC.com");
+		return email.matches(getManagedDpt() + ".manager." + getFirstName().toLowerCase() + "@"+ companyName +".com");
 	}
 
 

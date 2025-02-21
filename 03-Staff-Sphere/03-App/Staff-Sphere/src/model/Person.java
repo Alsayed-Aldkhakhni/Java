@@ -6,9 +6,9 @@
 //=====================================================================
 
 package model;
-import java.time.*;          // import(s) declaration.
+import java.time.*;                             // import(s) declaration.
 
-public abstract class Person // class declaration.
+public abstract class Person implements Payable // class declaration.
 {
 	// instance variables.
 	private long personID;
@@ -35,65 +35,59 @@ public abstract class Person // class declaration.
 		setPassword(passwd);
 	}
 
-
 	// personID setter and getter.	
 	public  long getPersonID() { return personID; }
-	private void setPersonID(long personID) throws IllegalArgumentException 
+	public final void setPersonID(long personID) throws IllegalArgumentException 
 	{ 
 		if(personID <= 0)
-			throw new IllegalArgumentException("Invalid person id.");
+			throw new IllegalArgumentException("Invalid person id ["+ personID +"]");
 		
 		this.personID = personID;
 	}
 	
-	
 	// firstName setter and getter.
 	public  String getFirstName() { return firstName; }
-	private void   setFirstName(String firstName) throws IllegalArgumentException
+	public final void   setFirstName(String firstName) throws IllegalArgumentException
 	{
 		if(! Person.isNameValid(firstName) )
-			throw new IllegalArgumentException("[Invalid 1st name ["+ getFirstName() +"]");
+			throw new IllegalArgumentException("[Invalid 1st name ["+ firstName +"]");
 		
 		this.firstName = firstName;
 	}
-
 	
 	// lastName setter and getter.
 	public  String getLastName() { return lastName; }
-	private void   setLastName(String lastName) throws IllegalArgumentException
+	public final void   setLastName(String lastName) throws IllegalArgumentException
 	{
 		if(! Person.isNameValid(lastName) )
-			throw new IllegalArgumentException("Invalid last name ["+ getLastName() +"]");
+			throw new IllegalArgumentException("Invalid last name ["+ lastName +"]");
 		
 		this.lastName = lastName;
 	}
 	
-
 	// address setter and getter.
 	public String getAddress() { return address; }
-	public void setAddress(String address) throws IllegalArgumentException
+	public final void setAddress(String address) throws IllegalArgumentException
 	{
 		if(! Person.isAddressValid(address))
-			throw new IllegalArgumentException("Invalid address.["+ getAddress() +"]");
+			throw new IllegalArgumentException("Invalid address.["+ address +"]");
 		
 		this.address = address;
 	}
-
 	
 	// address setter and getter.
 	public String getPhoneNumber() { return phoneNumber; }
-	public void setPhoneNumber(String phoneNumber) throws IllegalArgumentException
+	public final void setPhoneNumber(String phoneNumber) throws IllegalArgumentException
 	{
 		if(! Person.isPhoneNumberValid(phoneNumber))
-			throw new IllegalArgumentException("Invalid phone number. ["+ getPhoneNumber() +"]");
+			throw new IllegalArgumentException("Invalid phone number. ["+ phoneNumber +"]");
 		
 		this.phoneNumber = phoneNumber;
 	}
 
-
 	// calculate the age of a person.
 	public  int  getAge() { return age; }
-	private void setAge(LocalDate birthDate) throws IllegalArgumentException
+	public final void setAge(LocalDate birthDate) throws IllegalArgumentException
 	{
 		int dummy = Period.between(birthDate, LocalDate.now()).getYears();
 
@@ -103,48 +97,33 @@ public abstract class Person // class declaration.
 		age = dummy;
 	}
 
-
 	// birth date setter & getter.
 	public  LocalDate getBirthDate() { return birthDate; }
-	private void      setBirthDate(LocalDate birthDate)
+	public final void      setBirthDate(LocalDate birthDate)
 	{
 		this.birthDate = birthDate;
 		this.setAge(birthDate);
 	}
-
 	
 	// gender setter and getter.
-	private void   setGender(Gender gender) { this.gender = gender; }
+	public final void   setGender(Gender gender) { this.gender = gender; }
 	public  Gender getGender() { return gender; }
 	
 
 	// password setter and getter.
 	public String getPassword() { return password; }
-	public void   setPassword(String password) throws IllegalArgumentException
+	public final void   setPassword(String password) throws IllegalArgumentException
 	{
 		if(! Person.isPasswordValid(password))
 			throw new IllegalArgumentException("Invalid password. ["+ password +"]");
 		
 		this.password = password;
 	}
-	
-	
-	// salary setter and getter.
-	public abstract double earnings();
-	
-	// public void   setSalary(double salary) throws IllegalArgumentException
-	// {
-	// 	if(salary < 0)
-	// 		throw new IllegalArgumentException("["+ salary +"] Invalid salary.");
-	// 	this.salary = salary; 
-	// }
-	
-	
+
 	// validate the manager password format.
 	public static boolean isPasswordValid(String password) {
 		return password.matches("^((\\w|\\d|[@#$%^&*-_+=!><]){8,20}){1,2}$");
 	}
-
 
 	// validate the name.
 	public static boolean isNameValid(String name) { return name.matches("[A-Z][a-z]{2,10}"); }
@@ -154,14 +133,12 @@ public abstract class Person // class declaration.
 	public static boolean isAddressValid(String address) {
 		return address.matches("[1-9][0-9]{0,3} [aA-zZ]{2,10}( [aA-zZ]{2,10})*");
 	}
-	
 
 	// allows only 010, 011, 012, 015 as a prefix.
 	// phone number has a prefix and 11 characters length.
 	public static boolean isPhoneNumberValid(String phone){
 		return phone.matches("[0][1][0125][0-9]{8}");
 	}
-	
 
 	// represent the object as a string called by %s.
 	@Override
@@ -179,7 +156,6 @@ public abstract class Person // class declaration.
 							  getAddress(), getPhoneNumber(), getBirthDate().toString(),
 							  getAge(), getGender().toString());
 	}
-	
 	
 	// print the personal data of the person.
 	public void viewPersonalData()

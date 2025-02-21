@@ -48,7 +48,7 @@ public class Employee extends Person // class declaration.
 	public void setEmpID(long empID) throws IllegalArgumentException
 	{
 		if(empID <= 0)
-			throw new IllegalArgumentException("["+ getEmpID() + "] Invalid employee ID.");
+			throw new IllegalArgumentException("["+ empID + "] Invalid employee ID.");
 
 		this.empID = empID;
 	}
@@ -75,7 +75,7 @@ public class Employee extends Person // class declaration.
 		
 		this.workedHours = workedHours;
 	}
-
+	
 	@Override
 	public double earnings() { return getWorkedHours() * getRatePerHour(); }
 	

@@ -38,7 +38,7 @@ public class Admin extends Person // class declaration.
 	public boolean isEmailValid(String email)
 	{
 		// admin email format: admin.adminName@companyName.com
-		return email.matches("admin." + getFirstName().toLowerCase() + "@ABC.com");
+		return email.matches("admin." + getFirstName().toLowerCase() + "@"+ companyName +".com");
 	}
 
 	// validate the manager's salary.
