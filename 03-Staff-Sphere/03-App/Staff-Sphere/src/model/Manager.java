@@ -13,21 +13,22 @@ public class Manager extends Person // class declaration.
 	// instance variables.
 	private String email;
 	private String managedDpt;
-
-	// default constructor.
-	public Manager() { super(); } 
-
+	private double salary;
+	
+//	public Person(long id, String fName, String lName,
+//		      String addr, String phone, Gender gen, LocalDate date, String passwd)
+	
 	// arguments constructor.
-	public Manager(int id, String fName, String lName, String addr, String phone,
-			       Gender gen, LocalDate date, double salary, String dpt, String email, String passwd)
+	public Manager(long id, String fName, String lName, String addr, String phone,
+			       Gender gen, LocalDate date, String passwd, double salary, String dpt, String email)
 	{
-		super(id, fName, lName, addr, phone, salary, gen, date, passwd);
+		super(id, fName, lName, addr, phone, gen, date, passwd);
 		
 		setManagedDpt(dpt);
 		setEmail(email);
+		setSalary(salary);
 	}
 
-	
 	// email setter and getter.
 	public String getEmail() { return email; }
 	public void setEmail(String email) throws IllegalArgumentException
@@ -41,7 +42,7 @@ public class Manager extends Person // class declaration.
 
 	// department setter and getter.
 	public String getManagedDpt() {	return managedDpt; }
-	public void setManagedDpt(String managedDpt) throws IllegalArgumentException
+	public void   setManagedDpt(String managedDpt) throws IllegalArgumentException
 	{
 		if(! isDeptValid(managedDpt))
 			throw new IllegalArgumentException("Invalid department format.");
@@ -58,6 +59,18 @@ public class Manager extends Person // class declaration.
 	}
 
 
+	// validate the manager's salary.
+	public void setSalary(double salary)
+	{
+		if(salary <= 0.0 || salary >= Double.MAX_VALUE)
+			throw new IllegalArgumentException("Invalid salary ["+ salary +"]");
+		
+		this.salary = salary;
+	}
+	
+	@Override
+	public double earnings() { return salary; }
+	
 	// print  the object while
 	// it is called using [%s].
 	@Override
@@ -67,8 +80,10 @@ public class Manager extends Person // class declaration.
 					  "Email     : %s%n"+
 					  "Password  : %s%n"+
 					  "Manages   : %s%n", 
-		              getSalary(), getEmail(), getPassword(), getManagedDpt());
+		              earnings(), getEmail(), getPassword(), getManagedDpt());
 	}
+	
+	/* DB related functions. */
 	
 	// validate the department.
 	public static boolean isDeptValid(String dpt) {
@@ -76,7 +91,6 @@ public class Manager extends Person // class declaration.
 		// must access the database.
 		return true;
 	}
-	
 	
 	public void assignTask(Task task) {
 		// take the task information and assign them in DB.
@@ -94,3 +108,4 @@ public class Manager extends Person // class declaration.
 		// fetch the data and print them on a file.
 	}
 }
+

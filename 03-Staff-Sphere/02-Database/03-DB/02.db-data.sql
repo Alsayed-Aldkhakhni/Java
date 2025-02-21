@@ -4,1249 +4,147 @@
 # Author : Alsayed A. Khaleel
 ###############################################################
 
-/* Insert data into Persons table. */
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Alsayed',
-        'Khaleel',
-        '2003-10-18',
-        '123 Alex, EG',
-        NULL,
-        5000,
-        'Male',
-        '01211111111'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Khaled',
-        'Ameer',
-        '2000-01-08',
-        '456 Cairo, EG',
-        NULL,
-        5200,
-        'Male',
-        '01111111112'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Moataz',
-        'Hassan',
-        '2002-10-7',
-        '123 Alex, EG',
-        NULL,
-        9000.66,
-        'Male',
-        '01111111113'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Alsayed',
-        'Mohammed',
-        '2000-11-1',
-        '123 Mansora, EG',
-        NULL,
-        5000,
-        'Male',
-        '01111111114'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Saad',
-        'Adel',
-        '2001-10-18',
-        '789 Mansora, EG',
-        NULL,
-        4000,
-        'Male',
-        '01111111115'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Asmaa',
-        'Khaleel',
-        '1998-02-8',
-        '159 Sinaa, EG',
-        NULL,
-        10000.55,
-        'Female',
-        '01111111116'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Hoda',
-        'Adel',
-        '2004-05-05',
-        '169 Ashmoon, EG',
-        NULL,
-        5000,
-        'Female',
-        '01111111117'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Mostafa',
-        'Khaleel',
-        '1999-12-1',
-        '159 Qina, EG',
-        NULL,
-        1200.55,
-        'Male',
-        '01111111118'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Kareem',
-        'Samieer',
-        '2000-07-18',
-        '789 Menof, EG',
-        NULL,
-        7000.95,
-        'Male',
-        '01111111119'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Omniaa',
-        'Ibrahiem',
-        '2004-10-1',
-        '123 Shebieen, EG',
-        NULL,
-        9000,
-        'Female',
-        '01111111110'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Heba',
-        'Ahmed',
-        '2004-5-8',
-        '101 Sinaa, EG',
-        NULL,
-        9650.50,
-        'Female',
-        '01111111101'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Kholood',
-        'Ahmed',
-        '2004-7-15',
-        '789 Cairo, EG',
-        NULL,
-        5000,
-        'Female',
-        '01111111121'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Hagar',
-        'Ahmed',
-        '2005-9-18',
-        '35 Gizaa, EG',
-        NULL,
-        7500.56,
-        'Female',
-        '01111111131'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Ahmed',
-        'Khaleel',
-        '2002-10-11',
-        '963 Gizaa, EG',
-        NULL,
-        2500.55,
-        'Male',
-        '01111111141'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Abdallah',
-        'Tarek',
-        '2004-7-8',
-        '281 Domyat, EG',
-        NULL,
-        9000,
-        'Male',
-        '01111111151'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Alaa',
-        'Ahmed',
-        '1995-08-01',
-        '562 Alex, EG',
-        NULL,
-        17000.66,
-        'Male',
-        '01111111161'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Saad',
-        'Smeer',
-        '2000-6-6',
-        '55 Domyat, EG',
-        NULL,
-        12000,
-        'Male',
-        '01111111171'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Roaa',
-        'Khaleel',
-        '2003-10-18',
-        '98 Garden City, EG',
-        NULL,
-        5000,
-        'Female',
-        '01111111181'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Sameer',
-        'Adel',
-        '2000-10-1',
-        '123 Mansora, EG',
-        NULL,
-        5000,
-        'Female',
-        '01111111191'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Moamen',
-        'Mohammed',
-        '2002-9-18',
-        '123 Shiebeen, EG',
-        NULL,
-        5000,
-        'Male',
-        '01111111011'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Alsayed',
-        'Khaleel',
-        '2003-10-18',
-        '123 Shiebeen, EG',
-        NULL,
-        5000,
-        'Male',
-        '01111111111'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Alsayed',
-        'Khaleel',
-        '2003-10-18',
-        '123 Tanta, EG',
-        NULL,
-        5000,
-        'Male',
-        '01111241111'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Adel',
-        'Ali',
-        '2000-02-02',
-        '159 Tanta, EG',
-        NULL,
-        8000.55,
-        'Male',
-        '01111231111'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Sara',
-        'Adel',
-        '2002-02-02',
-        '658 Shiebeen, EG',
-        NULL,
-        8000.55,
-        'Female',
-        '01217231111'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Persons` (
-        `FirstName`,
-        `LastName`,
-        `DateOfBirth`,
-        `Address`,
-        `Age`,
-        `Salary`,
-        `Gender`,
-        `PhoneNumber`
-    )
-VALUES (
-        'Samiera',
-        'Hashim',
-        '2001-07-02',
-        '785 Cairo, EG',
-        NULL,
-        8000.55,
-        'Female',
-        '01216231111'
-    );
-
-/* Insert data into Dependents table. */
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        100,
-        'Sara Khaleel',
-        'Wife',
-        '2000-05-15'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        100,
-        'Omar Khaleel',
-        'Son',
-        '2023-06-20'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        101,
-        'Layla Ameer',
-        'Wife',
-        '2000-04-10'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        101,
-        'Ali Ameer',
-        'Son',
-        '2023-03-14'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        102,
-        'Mona Hassan',
-        'Wife',
-        '1999-08-25'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        102,
-        'Samy Hassan',
-        'Son',
-        '2022-12-30'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        103,
-        'Noura Mohammed',
-        'Wife',
-        '2000-02-18'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        103,
-        'Moustafa Mohammed',
-        'Son',
-        '2024-05-05'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        104,
-        'Amani Adel',
-        'Wife',
-        '2000-11-10'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        104,
-        'Ramy Adel',
-        'Son',
-        '2022-04-25'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        105,
-        'Hassan Ahmed',
-        'Son',
-        '1996-07-30'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        105,
-        'Tamer Khaleel',
-        'Son',
-        '2023-09-10'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        106,
-        'Omar Khaled',
-        'Son',
-        '2002-12-05'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        106,
-        'Youssef Adel',
-        'Son',
-        '2023-02-18'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        107,
-        'Hanan Khaleel',
-        'Wife',
-        '1998-09-11'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        107,
-        'Mamdouh Khaleel',
-        'Son',
-        '2023-07-20'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        108,
-        'Samar Samieer',
-        'Wife',
-        '2001-03-13'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        108,
-        'Ziad Samieer',
-        'Son',
-        '2022-10-05'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        109,
-        'Mohamed Ibrahiem',
-        'Son',
-        '2002-02-28'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        109,
-        'Mariam Ibrahiem',
-        'Daughter',
-        '2023-01-18'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        110,
-        'Ahmed Moamen',
-        'Son',
-        '1998-11-07'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        110,
-        'Karim Ahmed',
-        'Son',
-        '2023-08-12'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        111,
-        'Mohammed Sami',
-        'Son',
-        '1999-04-21'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        111,
-        'Nour Ahmed',
-        'Son',
-        '2022-06-10'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        112,
-        'Ibrahim Ashraf',
-        'Son',
-        '2001-07-15'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        112,
-        'Lina Ahmed',
-        'Daughter',
-        '2023-04-04'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        113,
-        'Rania Khaleel',
-        'Wife',
-        '1997-10-12'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        113,
-        'Tariq Khaleel',
-        'Son',
-        '2023-05-30'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        114,
-        'Amani Tarek',
-        'Wife',
-        '2000-12-25'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        114,
-        'Amr Tarek',
-        'Son',
-        '2023-07-01'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        115,
-        'Fatma Ahmed',
-        'Wife',
-        '1998-04-14'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        115,
-        'Sami Ahmed',
-        'Son',
-        '2022-11-18'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        116,
-        'Amina Smeer',
-        'Wife',
-        '2001-01-29'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        116,
-        'Mohamed Smeer',
-        'Son',
-        '2023-03-05'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        117,
-        'Yara Khaleel',
-        'Wife',
-        '1999-09-20'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        117,
-        'Salah Khaleel',
-        'Son',
-        '2022-12-12'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        118,
-        'Nadia Adel',
-        'Wife',
-        '1998-06-11'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        118,
-        'Zain Adel',
-        'Son',
-        '2023-02-21'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        119,
-        'Maha Mohammed',
-        'Wife',
-        '2000-10-10'
-    );
-
-INSERT INTO
-    `StaffSphere`.`Dependents` (
-        `PersonID`,
-        `DependentName`,
-        `DependentRelation`,
-        `DateOfBirth`
-    )
-VALUES (
-        119,
-        'Ali Mohammed',
-        'Son',
-        '2023-11-15'
-    );
-
-
-/* Insert data into Admins table. */
-INSERT INTO
-    `StaffSphere`.Admins (PersonID, email, password)
-VALUES (100, 'email', 'password');
-
-INSERT INTO
-    `StaffSphere`.Admins (PersonID, email, password)
-VALUES (107, 'email', 'password');
-
-INSERT INTO
-    `StaffSphere`.Admins (PersonID, email, password)
-VALUES (115, 'email', 'password');
-
-
-/* Insert some departments. */
-/* Starts from 800 -> 804   */
-INSERT INTO
-    `StaffSphere`.Departments (
-        DepartmentName,
-        DepartmentLocation,
-        ManagerID,
-        ManagerStartDate
-    )
-VALUES (
-        'Department01',
-        'Floor01',
-        NULL,
-        NULL
-    );
-
-INSERT INTO
-    `StaffSphere`.Departments (
-        DepartmentName,
-        DepartmentLocation,
-        ManagerID,
-        ManagerStartDate
-    )
-VALUES (
-        'Department02',
-        'Floor02',
-        NULL,
-        NULL
-    );
-
-INSERT INTO
-    `StaffSphere`.Departments (
-        DepartmentName,
-        DepartmentLocation,
-        ManagerID,
-        ManagerStartDate
-    )
-VALUES (
-        'Department03',
-        'Floor03',
-        NULL,
-        NULL
-    );
-
-INSERT INTO
-    `StaffSphere`.Departments (
-        DepartmentName,
-        DepartmentLocation,
-        ManagerID,
-        ManagerStartDate
-    )
-VALUES (
-        'Department04',
-        'Floor04',
-        NULL,
-        NULL
-    );
-
-INSERT INTO
-    `StaffSphere`.Departments (
-        DepartmentName,
-        DepartmentLocation,
-        ManagerID,
-        ManagerStartDate
-    )
-VALUES (
-        'Department05',
-        'Floor05',
-        NULL,
-        NULL
-    );
-
-
-/* Insert Data into project table. */
-
-/* Projects IDs will start from 100 -> 110 */
-INSERT INTO `StaffSphere`.Projects(ProjectName, ControlledByDpt, ProjectDescription)
-VALUES('Project01', 800, 'This is project01 that involved in building new OS for');
-
-
-INSERT INTO `StaffSphere`.Projects(ProjectName, ControlledByDpt, ProjectDescription)
-VALUES('Project02', 800, 'This is project02 that involved in building new OS for');
-
-
-INSERT INTO `StaffSphere`.Projects(ProjectName, ControlledByDpt, ProjectDescription)
-VALUES('Project03', 801, 'This is project03 that involved in building new OS for');
-
-
-INSERT INTO `StaffSphere`.Projects(ProjectName, ControlledByDpt, ProjectDescription)
-VALUES('Project04', 802, 'This is project04 that involved in building new OS for');
-
-
-INSERT INTO `StaffSphere`.Projects(ProjectName, ControlledByDpt, ProjectDescription)
-VALUES('Project05', 802, 'This is project05 that involved in building new OS for');
-
-
-INSERT INTO `StaffSphere`.Projects(ProjectName, ControlledByDpt, ProjectDescription)
-VALUES('Project06', 803, 'This is project06 that involved in building new OS for');
-
-
-INSERT INTO `StaffSphere`.Projects(ProjectName, ControlledByDpt, ProjectDescription)
-VALUES('Project07', 802, 'This is project07 that involved in building new OS for');
-
-
-INSERT INTO `StaffSphere`.Projects(ProjectName, ControlledByDpt, ProjectDescription)
-VALUES('Project08', 803, 'This is project08 that involved in building new OS for');
-
-
-INSERT INTO `StaffSphere`.Projects(ProjectName, ControlledByDpt, ProjectDescription)
-VALUES('Project09', 804, 'This is project07 that involved in building new OS for');
-
-
-INSERT INTO `StaffSphere`.Projects(ProjectName, ControlledByDpt, ProjectDescription)
-VALUES('Project10', 804, 'This is project10 that involved in building new OS for');
-
-
-INSERT INTO `StaffSphere`.Projects(ProjectName, ControlledByDpt, ProjectDescription)
-VALUES('Project11', 801, 'This is project11 that involved in building new OS for');
+-- 10 rows for the Persons table
+INSERT INTO Persons (FirstName, LastName, Salary, Address, Age, PhoneNumber, DateOfBirth, Gender)
+VALUES
+('John', 'Doe', 50000.00, '1234 Elm St', 35, '12345678901', '1989-05-14', 'Male'),
+('Jane', 'Smith', 60000.00, '5678 Oak St', 40, '12345678902', '1984-02-23', 'Female'),
+('Michael', 'Johnson', 55000.00, '4321 Pine St', 30, '12345678903', '1994-01-10', 'Male'),
+('Emily', 'Davis', 65000.00, '9876 Birch St', 28, '12345678904', '1996-07-17', 'Female'),
+('William', 'Brown', 70000.00, '1234 Maple St', 45, '12345678905', '1980-11-02', 'Male'),
+('Olivia', 'Taylor', 75000.00, '7890 Cedar St', 34, '12345678906', '1990-09-12', 'Female'),
+('James', 'Miller', 62000.00, '5678 Redwood St', 50, '12345678907', '1974-03-28', 'Male'),
+('Sophia', 'Wilson', 54000.00, '1357 Elm St', 32, '12345678908', '1992-06-05', 'Female'),
+('Liam', 'Moore', 56000.00, '2468 Pine St', 29, '12345678909', '1995-08-18', 'Male'),
+('Ava', 'Anderson', 53000.00, '4680 Birch St', 33, '12345678910', '1991-12-25', 'Female');
+
+-- 10 rows for the Dependents table
+INSERT INTO Dependents (PersonID, FirstName, LastName, DateOfBirth, Age, Gender, Relationship)
+VALUES
+(100, 'Anna', 'Doe', '2015-02-01', 9, 'Female', 'Daughter'),
+(101, 'David', 'Smith', '2012-09-15', 12, 'Male', 'Son'),
+(102, 'Alex', 'Johnson', '2010-11-20', 14, 'Male', 'Son'),
+(103, 'Isabella', 'Davis', '2016-03-30', 8, 'Female', 'Daughter'),
+(104, 'Jack', 'Brown', '2009-06-22', 15, 'Male', 'Son'),
+(105, 'Charlotte', 'Taylor', '2017-01-09', 7, 'Female', 'Daughter'),
+(106, 'Oliver', 'Miller', '2014-11-11', 10, 'Male', 'Son'),
+(107, 'Grace', 'Wilson', '2011-07-25', 13, 'Female', 'Daughter'),
+(108, 'Ethan', 'Moore', '2012-12-10', 12, 'Male', 'Son'),
+(109, 'Mia', 'Anderson', '2013-05-22', 11, 'Female', 'Daughter');
+
+-- 10 rows for the Managers table
+INSERT INTO Managers (PersonID, ManagedDpt, email, password)
+VALUES
+(100, NULL, 'john.doe@company.com', 'password123'),
+(101, NULL, 'jane.smith@company.com', 'password123'),
+(102, NULL, 'michael.johnson@company.com', 'password123'),
+(103, NULL, 'emily.davis@company.com', 'password123'),
+(104, NULL, 'william.brown@company.com', 'password123'),
+(105, NULL, 'olivia.taylor@company.com', 'password123'),
+(106, NULL, 'james.miller@company.com', 'password123'),
+(107, NULL, 'sophia.wilson@company.com', 'password123'),
+(108, NULL, 'liam.moore@company.com', 'password123'),
+(109, NULL, 'ava.anderson@company.com', 'password123');
+
+-- 10 rows for the Admins table
+INSERT INTO Admins (PersonID, email, password)
+VALUES
+(100, 'admin1@company.com', 'adminpass1'),
+(101, 'admin2@company.com', 'adminpass2'),
+(102, 'admin3@company.com', 'adminpass3'),
+(103, 'admin4@company.com', 'adminpass4'),
+(104, 'admin5@company.com', 'adminpass5'),
+(105, 'admin6@company.com', 'adminpass6'),
+(106, 'admin7@company.com', 'adminpass7'),
+(107, 'admin8@company.com', 'adminpass8'),
+(108, 'admin9@company.com', 'adminpass9'),
+(109, 'admin10@company.com', 'adminpass10');
+
+-- 10 rows for the Departments table
+INSERT INTO Departments (DepartmentName, DepartmentLocation, ManagerID, DptCreateDate, ManagerStartDate)
+VALUES
+('IT', 'New York', 1000, '2010-01-01', '2010-01-01'),
+('HR', 'San Francisco', 1001, '2011-01-01', '2012-04-12'),
+('Finance', 'Chicago', 1002, '2012-01-01', '2013-09-15'),
+('Marketing', 'Los Angeles', 1003, '2010-01-01', '2014-05-18'),
+('Sales', 'Dallas', 1004, '2012-01-01', '2015-06-25'),
+('Support', 'Seattle', 1005, '2014-01-01', '2016-08-30'),
+('Research', 'Boston', 1006, '2015-01-01', '2017-11-01'),
+('Legal', 'Austin', 1007, '2016-01-01', '2018-03-07'),
+('Operations', 'Denver', 1008, '2018-01-01', '2019-02-21'),
+('R&D', 'Miami', 1009, '2019-01-01', '2020-09-10');
+
+UPDATE `Managers` SET `ManagedDpt` = 401 WHERE `ManagerID` = 1000;
+UPDATE `Managers` SET `ManagedDpt` = 402 WHERE `ManagerID` = 1001;
+UPDATE `Managers` SET `ManagedDpt` = 403 WHERE `ManagerID` = 1002;
+UPDATE `Managers` SET `ManagedDpt` = 404 WHERE `ManagerID` = 1003;
+UPDATE `Managers` SET `ManagedDpt` = 405 WHERE `ManagerID` = 1004;
+UPDATE `Managers` SET `ManagedDpt` = 406 WHERE `ManagerID` = 1005;
+UPDATE `Managers` SET `ManagedDpt` = 407 WHERE `ManagerID` = 1006;
+UPDATE `Managers` SET `ManagedDpt` = 408 WHERE `ManagerID` = 1007;
+UPDATE `Managers` SET `ManagedDpt` = 409 WHERE `ManagerID` = 1008;
+
+-- 10 rows for the Employees table
+INSERT INTO Employees (PersonID, WorksAtDpt, JobTitle, RatePerHour, Password)
+VALUES
+(100, 401, 'Developer', 35.50, 'devpass1'),
+(101, 402, 'Analyst', 40.00, 'analystpass2'),
+(102, 403, 'Designer', 30.75, 'designerpass3'),
+(103, 404, 'Manager', 50.00, 'managerpass4'),
+(104, 405, 'Admin', 20.25, 'adminpass5'),
+(105, 406, 'HR', 25.00, 'hrpass6'),
+(106, 407, 'Developer', 37.00, 'devpass7'),
+(107, 408, 'Analyst', 45.00, 'analystpass8'),
+(108, 409, 'Designer', 32.50, 'designerpass9');
+
+-- 10 rows for the Projects table
+INSERT INTO Projects (ProjectName, ControlledByDpt, ProjectDescription)
+VALUES
+('Project A', 401, 'Website Development'),
+('Project B', 402, 'Employee Onboarding System'),
+('Project C', 403, 'Financial Forecasting Tool'),
+('Project D', 404, 'Marketing Campaign'),
+('Project E', 405, 'Sales CRM'),
+('Project F', 406, 'Customer Support Portal'),
+('Project G', 407, 'New Product Research'),
+('Project H', 408, 'Legal Compliance'),
+('Project I', 409, 'Operations Optimization');
+
+-- 10 rows for the WorksOn table
+INSERT INTO WorksOn (EmployeeID, ProjectID, WorkedHours)
+VALUES
+(11000, 500, 35.5),
+(11001, 501, 40.0),
+(11002, 502, 30.5),
+(11003, 503, 45.0),
+(11004, 504, 20.0),
+(11005, 505, 50.5),
+(11006, 506, 37.0),
+(11007, 507, 42.0),
+(11008, 508, 25.0);
+
+-- 10 rows for the Tasks table
+INSERT INTO Tasks (DepartmentID, TaskName, TaskDescription, EmployeeID, StartDate, EndDate, Status)
+VALUES
+(401, 'Task A', 'Complete website design', 11000, '2025-02-01', '2025-03-01', 'In Progress'),
+(402, 'Task B', 'Conduct interviews', 11001, '2025-02-05', '2025-03-10', 'In Progress'),
+(403, 'Task C', 'Prepare financial reports', 11002, '2025-02-10', '2025-03-15', 'Done'),
+(404, 'Task D', 'Create marketing content', 11003, '2025-02-12', '2025-03-12', 'In Progress'),
+(405, 'Task E', 'Train new sales staff', 11004, '2025-02-14', '2025-03-14', 'Inactive'),
+(406, 'Task F', 'Resolve customer queries', 11005, '2025-02-18', '2025-03-18', 'In Progress'),
+(407, 'Task G', 'Design new product features', 11006, '2025-02-20', '2025-03-20', 'Inactive'),
+(408, 'Task H', 'Prepare legal documents', 11007, '2025-02-22', '2025-03-22', 'Done'),
+(409, 'Task I', 'Improve operational processes', 11008, '2025-02-25', '2025-03-25', 'In Progress');
+
+-- 10 rows for the Vacations table
+INSERT INTO Vacations (RequesterID, DepartmentID, NumOfDays, StartDate, EndDate, Causes, Status)
+VALUES
+(11000, 401, 7, '2025-03-01', '2025-03-07', 'Personal', FALSE),
+(11001, 402, 5, '2025-03-05', '2025-03-10', 'Vacation', FALSE),
+(11002, 403, 7, '2025-03-10', '2025-03-17', 'Family Emergency', TRUE),
+(11003, 404, 5, '2025-03-12', '2025-03-17', 'Sick Leave', FALSE),
+(11004, 405, 3, '2025-03-14', '2025-03-17', 'Personal', TRUE),
+(11005, 406, 6, '2025-03-15', '2025-03-21', 'Vacation', FALSE),
+(11006, 407, 8, '2025-03-18', '2025-03-26', 'Sick Leave', TRUE),
+(11007, 408, 4, '2025-03-20', '2025-03-24', 'Vacation', FALSE),
+(11008, 409, 7, '2025-03-22', '2025-03-29', 'Personal', TRUE);
