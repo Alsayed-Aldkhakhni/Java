@@ -1,0 +1,15 @@
+////////////////////////////////////////////////////////////////
+// Subject: Solve the Self-Review Exercises 10.2 of chapter 10.
+// Date   : Feb 22, 2025
+// Author : Alsayed A. Khaleel
+////////////////////////////////////////////////////////////////
+
+10.2) State whether each of the statements that follows is true or false. If false, explain why.
+    a) All methods in an abstract class must be declared as abstract methods 
+       [False], abstract class may have concrete methods.
+    b) Invoking a subclass-only method through a subclass variable is not allowed.
+       [False], it is.
+    c) If a superclass declares an abstract method, a subclass must implement that method.
+       [True], if it didn't, it ,subclass, must be declared abstract too.
+    d) An object of a class that implements an interface may be thought of as an object of that
+       interface type.[True].

@@ -1,0 +1,15 @@
+////////////////////////////////////////////////////////////////
+// Subject: Solve the Self-Review Exercises 10.1 of chapter 10.
+// Date   : Feb 22, 2025
+// Author : Alsayed A. Khaleel
+///////////////////////////////////////////////////////////////
+
+10.1) Fill in the blanks in each of the following statements:
+    a) If a class contains at least one abstract method, it’s a(n) [abstract class].
+    b) Classes from which objects can be instantiated are called [concrete classes].
+    c) [polymorphism] involves using a superclass variable to invoke methods on
+       superclass and subclass objects, enabling you to “program in the general.”
+    d) Methods that are not interface methods and that do not provide implementations must
+       be declared using keyword [abstract].
+    e) Casting a reference stored in a superclass variable to a subclass type is called [downcasting].
+    

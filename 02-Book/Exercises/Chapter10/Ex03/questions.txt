@@ -1,0 +1,13 @@
+////////////////////////////////////////////////////////////////
+// Subject: Solve the Self-Review Exercises 10.3 of chapter 10.
+// Date   : Feb 22, 2025
+// Author : Alsayed A. Khaleel
+////////////////////////////////////////////////////////////////
+
+10.3) Fill in the blanks in each of the following statements:
+    a) In Java SE 8, an interface may declare [default methods] that is,
+       public methods with concrete implementations that specify how
+       an operation should be performed.
+    b) As of Java SE 8, interfaces can now include [static] helper methods.
+    c) As of Java SE 8, any interface containing only one method is known as a [Functional Interface].
+

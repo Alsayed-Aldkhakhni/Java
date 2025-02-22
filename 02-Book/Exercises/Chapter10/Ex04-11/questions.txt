@@ -1,0 +1,77 @@
+////////////////////////////////////////////////////////////////
+// Subject: Solve the Exercises 10.4 -> 10.11 of chapter 10.
+// Date   : Feb 22, 2025
+// Author : Alsayed A. Khaleel
+////////////////////////////////////////////////////////////////
+
+
+10.4)
+How does polymorphism enable you to program “in the general” rather than “in the specific”?
+Discuss the key advantages of programming “in the general.”
+
+* Program in general lowers the code wrote to process each specific type, 
+  one method call statement performs various distinct execution based on
+  the reference it is called on.
+
+*********************************************************************************************************
+
+10.5)
+What are abstract methods? Describe the circumstances in which an abstract method would
+be appropriate.
+
+* Abstract methods are methods that have no implementation.
+* If that method is common between various subclasses but each class
+  have it own implementation for this method. [one thing with distinct forms]
+
+*********************************************************************************************************
+
+10.6)
+How does polymorphism promote extensibility?
+
+* Any class that you want to be added to the class hierarchy just will inherit the methods
+  it is allowed to and override those it must without corrupting the code used to process
+  in general style, since the objects of this new class will be also programmed in general.
+
+*********************************************************************************************************
+
+10.7)
+Discuss three proper ways in which you can assign superclass and subclass references to
+variables of superclass and subclass types.
+
+* superclass reference to superclass variable.
+* subclass reference to subclass variable.
+* downcasted superclass reference to subclass variable.
+
+*********************************************************************************************************
+
+10.8)
+Compare and contrast abstract classes and interfaces. Why would you use an abstract class?
+Why would you use an interface?
+
+* before Java SE 8:
+ - abstract classes are classes that is not instantiable and have abstract methods as well as concrete ones
+   and instance variables that all of those may be inherited by the subclasses.
+ - interfaces on the other hand are not inheritable and have only abstract methods and all of their variables
+   are static and final not editable.
+
+* after Java SE 8:
+ - The interface may have concrete methods using the keyword [default].
+
+*********************************************************************************************************
+
+10.9)
+Explain how default methods enable you to add new methods to an existing interface
+without breaking the classes that implemented the original interface.
+
+* The default methods are concrete methods that have it full implementation,
+   and once you write it to the interface, the classes that implement that interface
+   and their subclass will use the method directly.
+
+*********************************************************************************************************
+
+10.10)What is a functional interface?
+* functional Interfaces it is an interface that contains only one abstract method.
+
+*********************************************************************************************************
+10.11)Why is it useful to be able to add static methods to interfaces?
+* Those will be helper methods instead of declaring a separated class that contains those helpers.
