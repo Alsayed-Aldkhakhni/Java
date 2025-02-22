@@ -1,0 +1,129 @@
+//##########################################################
+// Subject: Solve the exercises 11.1 -> 11.15 of chapter 11.
+// Date   : Feb 22, 2025
+// Author : Alsayed A. Khaleel
+//##########################################################
+
+11.1)
+List five common examples of exceptions.
+* accessing an index out of the array's bounds.
+* passing invalid input to a method.
+* division by zero.
+* cannot open the specified file.
+* file has no more content to read.
+
+11.2)
+Why are exceptions particularly appropriate for dealing with errors produced by methods
+of classes in the Java API?
+* Since Java API methods signal exception in an structured way which 
+  separate the error-handling from the normal code, which makes the program more readable.
+
+11.3)
+What is a “resource leak”?
+* It is the inability to use a resource that was allocated to a program, and the program is not using it.
+
+11.4)
+If no exceptions are thrown in a try block, where does control proceed to when the try
+block completes execution?
+* To the next statement that immediately follow the last catch block if there is no finally block,
+  if it is 1st execute finally and then go to the next statement mentioned.
+
+11.5)
+Give a key advantage of using catch(Exception exceptionName).
+* It allows catching and handling all exceptions that are subclasses of Exception polymorphically.
+
+11.6)
+Should a conventional application catch Error objects? Explain.
+* No, Those exceptions are related to the underlying java environment, JVM, and
+  the program won't be able to recover from it.
+
+11.7)
+What happens if no catch handler matches the type of a thrown object?
+* If no catch block matches the exception type,
+  the program will generate an error unless a superclass of the exception is caught.
+
+* For example:
+
+    try {
+        
+        throw new IllegalArgumentException("Exception");
+    }
+    catch(IOException e) {
+        e.printStackTrace();
+    }
+    catch(SQLException e) {
+        e.printStackTrace();
+    }
+
+11.8)
+What happens if several catch blocks match the type of the thrown object?
+* If multiple catch blocks match, the first suitable one will be executed.
+    try {
+        
+        throw new IllegalArgumentException("Hi");
+    }
+    catch(IllegalArgumentException e) {
+        e.printStackTrace();
+    }
+    catch(Exception e) {
+        e.printStackTrace();
+    }
+
+* If a superclass catch comes before a subclass catch, it will cause an error.
+  you will got an error. [unreached catch clause].
+    try {
+
+        throw new IllegalArgumentException("Hi");
+    }
+    catch(Exception e) {
+        e.printStackTrace();
+    }
+    catch(IllegalArgumentException e) {
+        e.printStackTrace();
+    }
+
+
+11.9)
+Why would a programmer specify a superclass type as the type in a catch block?
+* To catch any exception that has an "is-a" relationship with the specified superclass,
+  allowing one catch block to handle multiple exceptions.
+    try {
+
+        throw new IllegalArgumentException("Hi");
+    }
+    catch(Exception e) {
+        e.printStackTrace();
+    }
+
+* The previous piece of code catch any exception thrown of type Exception and any other
+  subclass that either directly or indirectly extends it using one catch statement.
+
+
+11.10)
+What is the key reason for using finally blocks?
+* It is mainly used to release resources used in the try block
+  because it runs whether an exception is thrown or not.
+
+11.11)
+What happens when a catch block throws an Exception?
+* The rest of the catch block is skipped, and the exception is passed to an outer try block if there is one.
+ Otherwise, Java’s default exception handler is called.
+
+
+11.12)
+What does the statement throw exceptionReference do in a catch block?
+* It rethrows the exception to be handled by another suitable catch block
+
+
+11.13)
+What happens to a local reference in a try block when that block throws an Exception?
+* It will be destroyed since it went out of the scope.
+
+11.15)
+Until this chapter, we’ve found dealing with errors detected by constructors
+to be a bit awkward. Explain why exception handling is an effective means
+for dealing with constructor failure.
+* If a constructor fails, the object cannot be created.
+  Exception handling allows the failure to be detected and handled properly
+  without leaving an incomplete object in memory.
+
