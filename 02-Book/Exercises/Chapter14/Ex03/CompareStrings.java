@@ -5,14 +5,14 @@
  *
  * Date     : October 29, 2024
  *
- * Author   : Alsayed A. Aldkhakhni
+ * Author   : Alsayed A. Khaleel
  *
  * Last mod : October 29, 2024
  *
  * */
 
 import java.util.Scanner;  // import declaration.
-public class CompareStrings// class decalration.
+public class CompareStrings// class declaration.
 {
 	public static void main(String[] args)
 	{
@@ -29,9 +29,9 @@ public class CompareStrings// class decalration.
 
 		// comparing those 2 strings.
 		if(str1.compareTo(str2) < 0)
-			System.out.printf("\"%s\" comes before \"%s\" alphapetically %n", str1, str2);
+			System.out.printf("\"%s\" comes before \"%s\" alphabetically %n", str1, str2);
 		else if(str1.compareTo(str2) > 0)
-			System.out.printf("\"%s\" comes after \"%s\" alphapetically %n", str1, str2);
+			System.out.printf("\"%s\" comes after \"%s\" alphabetically %n", str1, str2);
 		else
 			System.out.printf("\"%s\" and \"%s\" are identical%n", str1, str2);
 

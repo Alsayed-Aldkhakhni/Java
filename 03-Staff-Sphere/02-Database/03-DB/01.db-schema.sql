@@ -4,11 +4,11 @@
 # Author : Alsayed A. Khaleel
 ###############################################################
 
-/* Create the Database that we gonna use through the project. */
+--  Create the Database that we gonna use through the project. 
 CREATE DATABASE staff_sphere;
 USE staff_sphere;
 
-/* This Persons TABLE is the parent of Employees, Managers and Admins TABLEs. */
+--  This Persons TABLE is the parent of Employees, Managers and Admins TABLEs. 
 CREATE TABLE Persons
 (
     PersonID    INT            AUTO_INCREMENT,
@@ -25,12 +25,11 @@ CREATE TABLE Persons
     CONSTRAINT  UC_person_phoneNum    UNIQUE(PhoneNumber),
     CONSTRAINT  chk_person_age        CHECK(Age >= 22 AND Age < 60)
 );
-ALTER TABLE Persons AUTO_INCREMENT = 100; /* start counting persons from 100 */
+ALTER TABLE Persons AUTO_INCREMENT = 100; --  start counting persons from 100 
 
-/* --------------------------------------------------------------------------------------- */-
 
-/* Dependents Those are the employees' sons, daughters or wifes.*/
-/* One Person may have zero or more dependent on our system.    */
+--  Dependents Those are the employees' sons, daughters or wifes.
+--  One Person may have zero or more dependent on our system.    
 CREATE TABLE Dependents
 (
     PersonID     INT                NOT NULL,
@@ -45,9 +44,8 @@ CREATE TABLE Dependents
     CONSTRAINT   chk_age             CHECK(Age >= 1)
 );
 
-/* --------------------------------------------------------------------------------------- */-
 
-/* Managers who are managing, make sense :-), the departments and employees. */
+--  Managers who are managing, make sense :-), the departments and employees. 
 CREATE TABLE Managers
 (
     ManagerID  INT         AUTO_INCREMENT,
@@ -60,11 +58,10 @@ CREATE TABLE Managers
     CONSTRAINT FK_manager_person FOREIGN KEY(PersonID)  REFERENCES Persons(PersonID) ON DELETE CASCADE,
     CONSTRAINT UC_manager_person UNIQUE(PersonID)
 );
-ALTER TABLE Managers AUTO_INCREMENT = 1000; /* start counting Admins from 1000. */
+ALTER TABLE Managers AUTO_INCREMENT = 1000; --  start counting Admins from 1000. 
 
-/* --------------------------------------------------------------------------------------- */-
 
-/* Admins in this TABLE is the one who are responsible for controlling the system.*/
+--  Admins in this TABLE is the one who are responsible for controlling the system.
 CREATE TABLE Admins
 (
     AdminID   INT         AUTO_INCREMENT,
@@ -76,11 +73,10 @@ CREATE TABLE Admins
     CONSTRAINT FK_admin_person FOREIGN KEY(PersonID) REFERENCES Persons(PersonID) ON DELETE CASCADE,
     CONSTRAINT UC_admin_person UNIQUE(PersonID)
 );
-ALTER TABLE Admins AUTO_INCREMENT = 2000; /* start counting Admins from 2000. */
+ALTER TABLE Admins AUTO_INCREMENT = 2000; --  start counting Admins from 2000. 
 
-/* --------------------------------------------------------------------------------------- */-
 
-/* Those employees who are working on projects and managed by managers. */
+--  Those employees who are working on projects and managed by managers. 
 CREATE TABLE Employees
 (
     EmployeeID  INT           AUTO_INCREMENT,
@@ -95,11 +91,10 @@ CREATE TABLE Employees
     CONSTRAINT  chk_rate_per_hour  CHECK(RatePerHour > 0.0 AND RatePerHour <= 300.0),
     CONSTRAINT  FK_employee_person FOREIGN KEY(PersonID)   REFERENCES Persons(PersonID) ON DELETE CASCADE
 );
-ALTER TABLE Employees AUTO_INCREMENT = 11000; /* start counting Employees from 11000. */
+ALTER TABLE Employees AUTO_INCREMENT = 11000; --  start counting Employees from 11000. 
 
-/* --------------------------------------------------------------------------------------- */-
 
-/* Department table that stores the departments in the organization. */
+--  Department table that stores the departments in the organization. 
 CREATE TABLE Departments
 (
     DepartmentID       INT          AUTO_INCREMENT,
@@ -115,17 +110,16 @@ CREATE TABLE Departments
     CONSTRAINT FK_department_person FOREIGN KEY(ManagerID) REFERENCES Managers(ManagerID) ON DELETE SET NULL,
     CHECK(ManagerStartDate >= DptCreateDate)
 );
-ALTER TABLE Departments AUTO_INCREMENT = 400;         /* start counting the departments from 400. */
+ALTER TABLE Departments AUTO_INCREMENT = 400;         --  start counting the departments from 400. 
 
-ALTER TABLE Managers ADD CONSTRAINT FK_manager_dpt    /* Connect the managers table with the department . */
+ALTER TABLE Managers ADD CONSTRAINT FK_manager_dpt    --  Connect the managers table with the department . 
 FOREIGN KEY (ManagedDpt) REFERENCES Departments(DepartmentID)  ON DELETE SET NULL;
 
-ALTER TABLE Employees  ADD CONSTRAINT FK_employee_dpt /* Connect the employees table with the department . */
+ALTER TABLE Employees  ADD CONSTRAINT FK_employee_dpt --  Connect the employees table with the department . 
 FOREIGN KEY(WorksAtDpt) REFERENCES Departments(DepartmentID)   ON DELETE SET NULL;
 
-/* --------------------------------------------------------------------------------------- */-
 
-/* Project table that stores the data of projects managed by departments. */
+--  Project table that stores the data of projects managed by departments. 
 CREATE TABLE Projects
 (
     ProjectID          INT           AUTO_INCREMENT,
@@ -137,11 +131,10 @@ CREATE TABLE Projects
     CONSTRAINT PK_project            PRIMARY KEY(ProjectID),
     CONSTRAINT FK_project_department FOREIGN KEY(ControlledByDpt) REFERENCES Departments(DepartmentID) ON  DELETE CASCADE
 );
-ALTER Table Projects AUTO_INCREMENT = 500; /* Start counting from 500 for projects. */
+ALTER Table Projects AUTO_INCREMENT = 500; --  Start counting from 500 for projects. 
 
-/* --------------------------------------------------------------------------------------- */-
 
-/* This relation represents the employees's worked hours at projects. */
+--  This relation represents the employees's worked hours at projects. 
 CREATE TABLE WorksOn
 (
     EmployeeID  INT,
@@ -153,10 +146,9 @@ CREATE TABLE WorksOn
     CONSTRAINT  PK_works_on          PRIMARY KEY(EmployeeID, ProjectID)
 );
 
-/* --------------------------------------------------------------------------------------- */-
 
-/* Tasks table that stores the data of the tasks assigned to the employee */
-/* in their departments by their managers.*/
+--  Tasks table that stores the data of the tasks assigned to the employee 
+--  in their departments by their managers.
 CREATE TABLE Tasks
 (
     TaskID          INT   AUTO_INCREMENT,
@@ -175,15 +167,12 @@ CREATE TABLE Tasks
 
 ALTER TABLE Tasks AUTO_INCREMENT = 700;
 
-/* --------------------------------------------------------------------------------------- */-
-
-/* The vacations requested by the employees. */
+--  The vacations requested by the employees. 
 CREATE TABLE Vacations
 (
     VacationID   INT          AUTO_INCREMENT,
     RequesterID  INT,
     DepartmentID INT,
-    NumOfDays    SMALLINT     DEFAULT 7,
     StartDate    DATE,
     EndDate      DATE,
     Causes       VARCHAR(200) NOT     NULL,
@@ -192,8 +181,6 @@ CREATE TABLE Vacations
     CONSTRAINT PK_vacation          PRIMARY KEY(VacationID,   DepartmentID),
     CONSTRAINT FK_vacation_dpt      FOREIGN KEY(DepartmentID) REFERENCES Departments(DepartmentID),
     CONSTRAINT FK_vacation_employee FOREIGN KEY(RequesterID)  REFERENCES Employees(EmployeeID), 
-    CONSTRAINT chk_days             check(NumOfDays > 1)
+    Check(EndDate > StartDate)
 );
-ALTER TABLE Vacations AUTO_INCREMENT = 800; /* start counting the vacations from 800. */
-
-/* --------------------------------------------------------------------------------------- */
+ALTER TABLE Vacations AUTO_INCREMENT = 800; --  start counting the vacations from 800. 

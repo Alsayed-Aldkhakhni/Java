@@ -1,0 +1,23 @@
+//========================================================
+// Subject: Solve the Self-Review Exercises of Chapter 14.
+// Date   : Feb 27, 2025
+// Author : Alsayed A. Khaleel
+//========================================================
+
+14.1) 
+State whether each of the following is true or false. If false, explain why.
+
+    a) When String objects are compared using ==, the result is true if the Strings contain
+        the same values. 
+        [False], (==) operator compares the references saved in the variables not the content.
+    b) A String can be modified after it’s created.
+        [False], Strings are immutable.
+
+14.2) For each of the following, write a single statement that performs the indicated task:
+    a) Compare the string in s1 to the string in s2 for equality of contents.
+       s1.equals(s2);
+    b) Append the string s2 to the string s1, using +=.
+       s1 += s2;
+    c) Determine the length of the string in s1.
+       s1.length();
+

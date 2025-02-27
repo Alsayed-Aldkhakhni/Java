@@ -137,14 +137,14 @@ VALUES
 (409, 'Task I', 'Improve operational processes', 11008, '2025-02-25', '2025-03-25', 'In Progress');
 
 -- 10 rows for the Vacations table
-INSERT INTO Vacations (RequesterID, DepartmentID, NumOfDays, StartDate, EndDate, Causes, Status)
+INSERT INTO Vacations (RequesterID, DepartmentID, StartDate, EndDate, Causes, Status)
 VALUES
-(11000, 401, 7, '2025-03-01', '2025-03-07', 'Personal', FALSE),
-(11001, 402, 5, '2025-03-05', '2025-03-10', 'Vacation', FALSE),
-(11002, 403, 7, '2025-03-10', '2025-03-17', 'Family Emergency', TRUE),
-(11003, 404, 5, '2025-03-12', '2025-03-17', 'Sick Leave', FALSE),
-(11004, 405, 3, '2025-03-14', '2025-03-17', 'Personal', TRUE),
-(11005, 406, 6, '2025-03-15', '2025-03-21', 'Vacation', FALSE),
-(11006, 407, 8, '2025-03-18', '2025-03-26', 'Sick Leave', TRUE),
-(11007, 408, 4, '2025-03-20', '2025-03-24', 'Vacation', FALSE),
-(11008, 409, 7, '2025-03-22', '2025-03-29', 'Personal', TRUE);
+(11000, 401, '2025-03-01', '2025-03-07', 'Personal', FALSE),
+(11001, 402, '2025-03-05', '2025-03-10', 'Vacation', FALSE),
+(11002, 403, '2025-03-10', '2025-03-17', 'Family Emergency', TRUE),
+(11003, 404, '2025-03-12', '2025-03-17', 'Sick Leave', FALSE),
+(11004, 405, '2025-03-14', '2025-03-17', 'Personal', TRUE),
+(11005, 406, '2025-03-15', '2025-03-21', 'Vacation', FALSE),
+(11006, 407, '2025-03-18', '2025-03-26', 'Sick Leave', TRUE),
+(11007, 408, '2025-03-20', '2025-03-24', 'Vacation', FALSE),
+(11008, 409, '2025-03-22', '2025-03-29', 'Personal', TRUE);

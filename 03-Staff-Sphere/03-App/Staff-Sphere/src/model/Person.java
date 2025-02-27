@@ -6,9 +6,9 @@
 //=====================================================================
 
 package model;
-import java.time.*;                             // import(s) declaration.
+import java.time.*;  // import(s) declaration.
 
-public abstract class Person implements Payable // class declaration.
+public abstract class Person implements Payable, Validatable // class declaration.
 {
 	// instance variables.
 	private long personID;
@@ -49,7 +49,7 @@ public abstract class Person implements Payable // class declaration.
 	public  String getFirstName() { return firstName; }
 	public final void   setFirstName(String firstName) throws IllegalArgumentException
 	{
-		if(! Person.isNameValid(firstName) )
+		if(! Validatable.isNameValid(firstName) )
 			throw new IllegalArgumentException("[Invalid 1st name ["+ firstName +"]");
 		
 		this.firstName = firstName;
@@ -59,7 +59,7 @@ public abstract class Person implements Payable // class declaration.
 	public  String getLastName() { return lastName; }
 	public final void   setLastName(String lastName) throws IllegalArgumentException
 	{
-		if(! Person.isNameValid(lastName) )
+		if(! Validatable.isNameValid(lastName) )
 			throw new IllegalArgumentException("Invalid last name ["+ lastName +"]");
 		
 		this.lastName = lastName;
@@ -69,7 +69,7 @@ public abstract class Person implements Payable // class declaration.
 	public String getAddress() { return address; }
 	public final void setAddress(String address) throws IllegalArgumentException
 	{
-		if(! Person.isAddressValid(address))
+		if(! Validatable.isAddressValid(address))
 			throw new IllegalArgumentException("Invalid address.["+ address +"]");
 		
 		this.address = address;
@@ -79,7 +79,7 @@ public abstract class Person implements Payable // class declaration.
 	public String getPhoneNumber() { return phoneNumber; }
 	public final void setPhoneNumber(String phoneNumber) throws IllegalArgumentException
 	{
-		if(! Person.isPhoneNumberValid(phoneNumber))
+		if(! Validatable.isPhoneNumberValid(phoneNumber))
 			throw new IllegalArgumentException("Invalid phone number. ["+ phoneNumber +"]");
 		
 		this.phoneNumber = phoneNumber;
@@ -114,30 +114,10 @@ public abstract class Person implements Payable // class declaration.
 	public String getPassword() { return password; }
 	public final void   setPassword(String password) throws IllegalArgumentException
 	{
-		if(! Person.isPasswordValid(password))
+		if(! Validatable.isPasswordValid(password))
 			throw new IllegalArgumentException("Invalid password. ["+ password +"]");
 		
 		this.password = password;
-	}
-
-	// validate the manager password format.
-	public static boolean isPasswordValid(String password) {
-		return password.matches("^((\\w|\\d|[@#$%^&*-_+=!><]){8,20}){1,2}$");
-	}
-
-	// validate the name.
-	public static boolean isNameValid(String name) { return name.matches("[A-Z][a-z]{2,10}"); }
-	
-
-	// validate the address.
-	public static boolean isAddressValid(String address) {
-		return address.matches("[1-9][0-9]{0,3} [aA-zZ]{2,10}( [aA-zZ]{2,10})*");
-	}
-
-	// allows only 010, 011, 012, 015 as a prefix.
-	// phone number has a prefix and 11 characters length.
-	public static boolean isPhoneNumberValid(String phone){
-		return phone.matches("[0][1][0125][0-9]{8}");
 	}
 
 	// represent the object as a string called by %s.
