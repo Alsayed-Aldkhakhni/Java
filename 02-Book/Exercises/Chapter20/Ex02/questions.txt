@@ -1,0 +1,20 @@
+// ####################################
+// Subject: Answer the exercise 20.2.
+// Date   : March 6, 2025
+// Author : Alsayed A. Khaleel
+// ####################################
+
+a) [generic methods and classes] enable you to specify, with a single method declaration,
+    a set of related methods, or with a single class declaration,
+    a set of related types, respectively.
+b) A type-parameter section is delimited by [two angle braces < >]
+c) A generic method’s [type-parameter section] can be used to specify 
+   the method’s argument types, to specify the method’s return type and
+   to declare variables within the method.
+d) The statement "Stack objectStack = new Stack();" indicates that objectStack stores
+   [raw-type objects of type Object]
+e) In a generic class declaration, the class name is followed by a(n)
+   [type-parameter section <T>]
+f) The syntax specifies that the upper bound of a wildcard is type T.
+    [? extends T]
+    

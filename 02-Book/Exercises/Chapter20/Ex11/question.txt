@@ -4,12 +4,12 @@
    ArrayList<Employee> list = new ArrayList<>();
 
  * The compiler performs type-safety at compile-time
- * it will not permit any types other Employees or in 
- * the is-a relationship with the Employee class to be 
- * added to this list.
+    it will not permit any types other Employees or in 
+    the is-a relationship with the Employee class to be 
+    added to this list.
   
  * if we have a class named Worker, and is not a child of
- * Employee, the following will happen.
+   Employee, the following will happen.
   
   list.add(new Worker());
   
@@ -19,5 +19,4 @@
   is not applicable for the arguments (Worker)
 
  */
-
-
+ 

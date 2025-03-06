@@ -3,17 +3,15 @@
  * Ex09: How can generic methods be overloaded?
  
  * be declaring another generic one with the same name
- * but with a different  number of arguments.  
+   but with a different  number of arguments.  
  
  	public static <T> void function(T x)      { System.out.println(x); }
 	public static <T> void function(T x, T y) { System.out.println(x +", "+ y); }
  
  * or another non-generic one with the same number of 
- * arguments but with a specific data type.
+   arguments but with a specific data type.
  
  	public static <T> void function(T x) { System.out.println(x); }
  	public static void function(int x)   { System.out.println(x); }
  
  */
-
-

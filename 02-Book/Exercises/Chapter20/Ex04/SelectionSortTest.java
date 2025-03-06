@@ -10,6 +10,8 @@
  */
 
 // import(s) declaration.
+package codes;
+
 import java.security.SecureRandom;
 import java.util.Arrays;
 
@@ -20,18 +22,17 @@ public class SelectionSortTest // class declaration.
 		// random number generator.
 		SecureRandom generator = new SecureRandom();
 		
-		Integer[] data = new Integer[10];     // create array
-		for (int i = 0; i < data.length; i++) // populate array
-			data[i] = 10 + generator.nextInt(90);
+		Integer[] intData = new Integer[10];     // create array
+		for (int i = 0; i < intData.length; i++) // populate array
+			intData[i] = 10 + generator.nextInt(90);
 		
-		// display array
-		System.out.printf("Unsorted array:%n%s%n%n", Arrays.toString(data));
+		// display array before being sorted.
+		System.out.printf("Unsorted array:%n%s%n%n", Arrays.toString(intData));
 		
-		// sort array
-		selectionSort(data);
+		selectionSort(intData); // sort array
 		
-		// display array
-		System.out.printf("Sorted array:%n%s%n%n", Arrays.toString(data));
+		// display array after being sorted.
+		System.out.printf("Sorted array:%n%s%n%n", Arrays.toString(intData));
 	}
 
 	// sort array using selection sort
@@ -78,7 +79,7 @@ public class SelectionSortTest // class declaration.
 			System.out.printf("%d ", data[i]);
 
 		// for alignment
-		System.out.printf("%n");
+		System.out.printf("%n               ");
 
 		// indicate amount of array that’s sorted
 		for (int j = 0; j < pass; j++)

@@ -1,10 +1,7 @@
 /*
- 
  * Ex10: Overload resolution.
  
  * If the compiler finds 2 or more suitable method that
- * may work the this method call, will cause an error [ambiguity].
+   may work fine with this method call, will cause an error [ambiguity].
  
  */
-
-
