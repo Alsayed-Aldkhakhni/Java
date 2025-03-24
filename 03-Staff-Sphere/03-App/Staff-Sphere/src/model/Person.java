@@ -136,11 +136,4 @@ public abstract class Person implements Payable, Validatable // class declaratio
 							  getAddress(), getPhoneNumber(), getBirthDate().toString(),
 							  getAge(), getGender().toString());
 	}
-	
-	// print the personal data of the person.
-	public void viewPersonalData()
-	{
-		// it has to be with the GUI.
-		this.toString();
-	}
 }

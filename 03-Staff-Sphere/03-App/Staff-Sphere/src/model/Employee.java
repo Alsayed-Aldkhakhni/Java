@@ -8,7 +8,7 @@
 package model;
 import java.time.LocalDate;
 
-public class Employee extends Person // class declaration.
+public class Employee extends Person implements Comparable <Employee> // class declaration.
 {
 	// local instance variable.
 	private String jobTitle;
@@ -63,7 +63,6 @@ public class Employee extends Person // class declaration.
 		this.ratePerHour = ratePerHour;
 	}
 	
-
 	// worked hours services.
 	public double getWorkedHours() { return workedHours; }
 	public void   setWorkedHours(double workedHours) throws IllegalArgumentException
@@ -96,10 +95,11 @@ public class Employee extends Person // class declaration.
 					  getRatePerHour(), earnings(), getJobTitle(), getPassword());
 	}
 
+	// to sort a list of employees.
 	@Override
-	public void viewPersonalData()
+	public int compareTo(Employee emp)
 	{
-		
+		return (int)(getEmpID() - emp.getEmpID());
 	}
 	
 	public void requestVacation(Vacation vacation)
@@ -109,6 +109,7 @@ public class Employee extends Person // class declaration.
 
 	public void viewTasks()
 	{
+		
 
 	}
 

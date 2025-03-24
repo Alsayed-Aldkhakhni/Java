@@ -8,7 +8,7 @@
 package model;
 import java.time.LocalDate;
 
-public class Admin extends Person // class declaration.
+public class Admin extends Person implements Comparable<Admin> // class declaration.
 {
 	// instance variables.
 	private String email;
@@ -71,11 +71,15 @@ public class Admin extends Person // class declaration.
 	public void updateDepartment(long dptID) {}
 	public void deleteDepartment(long dptID) {}
 
-	@Override
-	public void viewPersonalData() {}
-	
 	public void generateSystemReport()
 	{
 		// will use file to generate those reports.
 	}
+
+	// to list a set of admins.
+	@Override
+	public int compareTo(Admin admin) {
+		return (int)(getPersonID() - admin.getPersonID());
+	}
 }
+

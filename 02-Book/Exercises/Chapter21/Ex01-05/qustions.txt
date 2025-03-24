@@ -1,0 +1,76 @@
+################################################
+# Subject: Solve the self-review exercises.
+# Date   : March 16, 2024
+# Author : Alsayed A. Khaleel
+################################################
+
+** Self-Review Exercises **
+21.1) Fill in the blanks in each of the following statements:
+    a) A [self-referential] class is used to form dynamic data structures that can grow and shrink
+         at execution time.
+    b) A(n) [Stack] is a constrained version of a linked list in which nodes can be inserted
+         and deleted only from the start of the list.
+    c) A method that does not alter a linked list, but simply looks at it to determine whether
+         it’s empty, is referred to as a(n) [predicate method].
+    d) A queue is referred to as a(n) [FIFO -> First In First Out] data structure because the
+         first nodes inserted are the first ones removed.
+    e) The reference to the next node in a linked list is referred to as a(n) [Link].
+    f) Automatically reclaiming dynamically allocated memory in Java is called [Garbage collection].
+    g) A(n) [Queue] is a constrained version of a linked list in which nodes can be inserted
+        only at the end of the list and deleted only from the start of the list.
+    h) A(n) [Tree] is a nonlinear, two-dimensional data structure that contains nodes with
+        two or more links.
+    i) A stack is referred to as a(n) [LIFO -> Last In First Out] data structure because the last node
+       inserted is the first node removed.
+    j) The nodes of a(n) [binary search] tree contain two link members.
+    k) The first node of a tree is the [root] node.
+    l) Each link in a tree node refers to a(n) [node] or [the parent] of that node.
+    m) A tree node that has no children is called a(n) [leaf node].
+    n) The three traversal algorithms we mentioned in the text for binary search trees are [pre-order, in-order, post-order].
+    
+    o) When compiling types in a package, the javac command-line option
+    specifies
+    where to store the package and causes the compiler to create the package’s directories if
+    they do not exist.
+    p) The compiler uses a(n)
+    to locate the classes it needs in the classpath.
+    option to
+    q) The classpath for the compiler and JVM can be specified with the
+    the javac or java command, or by setting the
+    environment variable.
+    r) There can be only one
+    in a Java source-code file, and it must precede all other
+    declarations and statements in the file.
+
+
+21.2) What are the differences between a linked list and a stack?
+    * Linked List               vs.      * Stack
+    * Insertion at any point             * Insertion at the top of the stack. [push onto the stack.]
+    head, tail or in between.          
+    * Deletion at any point.             * Deletion at the top of the stack. [pop off the stack.]
+    head, tail of any point.
+
+21.3) What are the differences between a stack and a queue?
+    * Stack                     vs.         * Queue
+    * Stacks are LIFO                       * Queues are [FIFO -> First In First Out]
+    [Last In First Out]                     the 1st item inserted is the 1st to be removed.
+    the item inserted last,
+    removed first.
+    * Data are pushed and popped            * Data is inserted at the tail of the queue [enqueue]
+    at the top of the stack.                and are removed from the queue's front or head [dequeue].
+
+21.4) Comment on how each of the following entities or concepts contributes to the reusability of data structures:
+    a) classes     -> Each data structure is a class [Queue, Stack, LinkedList, Tree] allowing encapsulation and reusability.
+    b) inheritance -> Use the shared methods and attributes instead of re-writing it.
+    c) composition -> delegate the shared methods and functionality and hide the ones that are not related.
+
+21.5) Provide the in-order, pre-order and post-order traversals of the binary search tree of Fig. 21.20.
+
+                 49 
+        28                 83
+   18       40         71       97
+ 11   19  32   44    69  72   92  99
+
+Pre-order : [root-left-right] -> [49, 28, 18, 11, 19, 40, 32, 44, 83, 71, 69, 72, 97, 92, 99]
+In-order  : [left-root-right] -> [11, 18, 19, 28, 32, 40, 44, 49, 69, 71, 72, 83, 92, 97, 99]
+Post-order: [left-right-root] -> [11, 19, 18, 32, 44, 40, 28, 69, 72, 71, 92, 99, 97, 83, 49]
